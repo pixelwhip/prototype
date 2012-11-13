@@ -1,0 +1,109 @@
+//
+// @file
+// Default tag styles.
+//
+// The only class selectors allowed in this file are those intended
+// for use within the WYSIWYG editor.
+// ----------------------------------------------------------------------------
+
+// Establish Vertical rhythm.
+@include establish-baseline();
+
+html > body {
+  // Override the default line height to allow for smaller baseline heights.
+  @include adjust-leading-to(3);
+  color: $clr-text;
+  font-family: $ff-body;
+}
+
+// Headings
+//-----------------------------------------------------------------------------
+
+h1 {
+  @include adjust-font-size-to($fs-h1);
+  @include rhythm(0, 0, 0, 1, $fs-h1);
+  color: $clr-accent;
+}
+
+h2 {
+  @include adjust-font-size-to($fs-h2, 3);
+  @include rhythm(0, 0, 0, 1, $fs-h2);
+  font-family: $ff-heading;
+  color: $clr-accent;
+}
+
+h3 {
+  @include adjust-font-size-to($fs-h3);
+  @include rhythm(2, 0, 0, 2, $fs-h3);
+  font-family: $ff-heading;
+  color: $clr-accent;
+}
+
+h4 {
+  @include adjust-font-size-to($fs-h4);
+  @include rhythm(4, 0, 0, 0, $fs-h4);
+  font-family: $ff-heading;
+  color: $clr-accent;
+}
+
+h5 {
+  @include adjust-font-size-to($fs-h5);
+  @include rhythm(4, 0, 0, 0, $fs-h5);
+}
+
+h6 {
+  @include adjust-font-size-to($fs-h6);
+  @include rhythm(4, 0, 0, 0, $fs-h6);
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+
+// Links
+//-----------------------------------------------------------------------------
+
+a {
+  @include link-colors($clr-link, darken($clr-link, 10%));
+  @include hover-link;
+}
+
+
+// Copy
+//-----------------------------------------------------------------------------
+
+p {
+  margin: 0 0 rhythm(2);
+}
+
+// Images
+//-----------------------------------------------------------------------------
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Definition Lists
+//-----------------------------------------------------------------------------
+
+dl {
+  margin-bottom: rhythm(3);
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: $w-gutter;
+}
+
+// Utility classes
+//-----------------------------------------------------------------------------
+
+.clearfix {
+  @include legacy-pie-clearfix;
+}
+
+.intro {
+  @include adjust-font-size-to($fs-xxl);
+}

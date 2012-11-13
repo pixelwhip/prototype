@@ -1,0 +1,9 @@
+{
+  "name": "flexslider",
+  "version": "0.0.0",
+  "commit": "8133de7c04044e7ebbb393de088a3ab826a4aa97",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/woothemes/FlexSlider.git"
+  }
+}

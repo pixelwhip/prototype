@@ -1,0 +1,49 @@
+//
+// @file
+// Pager styles.
+// ----------------------------------------------------------------------------
+
+// Pager ul
+.pager {
+  @extend .nav;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: rhythm(2);
+}
+
+// Pager links
+.pager-first,
+.pager-previous,
+.pager-item,
+.pager-next,
+.pager-last {
+  @include inline-block;
+
+  > a {
+    @include adjust-font-size-to($fs-xs);
+    @include border-radius(2px);
+    color: $gray-dark;
+    background-color: $gray-lightest;
+    padding: 2px 8px;
+    margin: rhythm(1, $fs-xs) 2px;
+
+    &:hover {
+      color: $white;
+      background-color: $gray-dark;
+    }
+  }
+}
+
+.pager-ellipsis {
+  @include inline-block;
+}
+
+.pager-current {
+  @include inline-block;
+  @include border-radius(2px);
+  @include adjust-font-size-to($fs-xs);
+  color: $white;
+  background-color: $gray-light;
+  padding: 0 8px;
+  margin: rhythm(1, $fs-xs) 2px;
+}
