@@ -5,10 +5,10 @@
 
 // Pager ul
 .pager {
-  @extend .nav;
-  text-align: center;
   padding-left: 0;
   margin-bottom: rhythm(2);
+  text-align: center;
+  list-style: none;
 }
 
 // Pager links

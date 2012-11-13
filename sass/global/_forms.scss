@@ -63,6 +63,7 @@ input[type="week"] {
 
 input[type="submit"] {
   @extend %button;
+  @extend %button--small;
   @extend %button--primary;
 }
 

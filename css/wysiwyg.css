@@ -42,7 +42,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+  font-family: "Droid Serif", Georgia, serif;
 }
 
 /* line 84, ../sass/global/_normalize.scss */
@@ -74,7 +74,7 @@ strong {
 
 /* line 134, ../sass/global/_normalize.scss */
 blockquote {
-  margin: 0.42857em 48px;
+  margin: 0.375em 48px;
 }
 
 /* line 143, ../sass/global/_normalize.scss */
@@ -91,7 +91,7 @@ mark {
 /* line 161, ../sass/global/_normalize.scss */
 p,
 pre {
-  margin: 0.42857em 0;
+  margin: 0.375em 0;
 }
 
 /* line 174, ../sass/global/_normalize.scss */
@@ -101,7 +101,7 @@ kbd,
 samp {
   font-family: monospace, serif;
   font-size: 1em;
-  line-height: 1.28571em;
+  line-height: 1.5em;
 }
 
 /* line 186, ../sass/global/_normalize.scss */
@@ -152,7 +152,7 @@ dl,
 menu,
 ol,
 ul {
-  margin: 0.42857em 0;
+  margin: 0.375em 0;
 }
 
 /* line 253, ../sass/global/_normalize.scss */
@@ -200,17 +200,17 @@ fieldset {
   border-color: #c0c0c0;
   margin: 0 2px;
   border-top-style: solid;
-  border-top-width: 0.07143em;
-  padding-top: 0.07857em;
+  border-top-width: 0.0625em;
+  padding-top: 0.06875em;
   border-bottom-style: solid;
-  border-bottom-width: 0.07143em;
-  padding-bottom: 0.20714em;
+  border-bottom-width: 0.0625em;
+  padding-bottom: 0.18125em;
   border-left-style: solid;
-  border-left-width: 0.07143em;
-  padding-left: 0.19643em;
+  border-left-width: 0.0625em;
+  padding-left: 0.17188em;
   border-right-style: solid;
-  border-right-width: 0.07143em;
-  padding-right: 0.19643em;
+  border-right-width: 0.0625em;
+  padding-right: 0.17188em;
 }
 
 /* line 347, ../sass/global/_normalize.scss */
@@ -295,74 +295,74 @@ table {
 
 /* line 61, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
-  font-size: 87.5%;
+  font-size: 100%;
 }
 
 /* line 64, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
-  font-size: 14px;
-  line-height: 0.42857em;
+  font-size: 16px;
+  line-height: 0.375em;
 }
 
 /* line 12, ../sass/global/_base.scss */
 html > body {
-  line-height: 1.28571em;
-  color: #68707e;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+  line-height: 1.5em;
+  color: #424c5e;
+  font-family: "Droid Serif", Georgia, serif;
 }
 
 /* line 22, ../sass/global/_base.scss */
 h1 {
-  font-size: 2.57143em;
-  line-height: 1.16667em;
+  font-size: 2.1875em;
+  line-height: 1.2em;
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.16667em;
+  margin-bottom: 0.17143em;
   color: #e55c16;
 }
 
 /* line 28, ../sass/global/_base.scss */
 h2 {
-  font-size: 1.71429em;
-  line-height: 0.75em;
+  font-size: 2em;
+  line-height: 1.125em;
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.25em;
-  font-family: "Droid Serif", Georgia, serif;
+  margin-bottom: 0.1875em;
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
   color: #e55c16;
 }
 
 /* line 35, ../sass/global/_base.scss */
 h3 {
-  font-size: 1.14286em;
-  line-height: 1.5em;
-  margin-top: 0.75em;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  margin-top: 0.5em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.75em;
-  font-family: "Droid Serif", Georgia, serif;
+  margin-bottom: 0.5em;
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
   color: #e55c16;
 }
 
 /* line 42, ../sass/global/_base.scss */
 h4 {
   font-size: 1em;
-  line-height: 1.28571em;
-  margin-top: 1.71429em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
-  font-family: "Droid Serif", Georgia, serif;
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
   color: #e55c16;
 }
 
 /* line 49, ../sass/global/_base.scss */
 h5 {
-  font-size: 0.92857em;
-  line-height: 1.38462em;
-  margin-top: 1.84615em;
+  font-size: 0.875em;
+  line-height: 1.28571em;
+  margin-top: 1.71429em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
@@ -370,9 +370,9 @@ h5 {
 
 /* line 54, ../sass/global/_base.scss */
 h6 {
-  font-size: 0.78571em;
-  line-height: 1.63636em;
-  margin-top: 2.18182em;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  margin-top: 2em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
@@ -396,7 +396,7 @@ a:hover {
 
 /* line 73, ../sass/global/_base.scss */
 p {
-  margin: 0 0 0.85714em;
+  margin: 0 0 0.75em;
 }
 
 /* line 80, ../sass/global/_base.scss */
@@ -407,7 +407,7 @@ img {
 
 /* line 88, ../sass/global/_base.scss */
 dl {
-  margin-bottom: 1.28571em;
+  margin-bottom: 1.125em;
 }
 
 /* line 92, ../sass/global/_base.scss */
@@ -436,8 +436,8 @@ dd {
 
 /* line 107, ../sass/global/_base.scss */
 .intro {
-  font-size: 1.28571em;
-  line-height: 1.33333em;
+  font-size: 1.75em;
+  line-height: 1.28571em;
 }
 
 /* line 10, ../sass/global/_images.scss */
@@ -456,13 +456,13 @@ dd {
 /* line 20, ../sass/global/_images.scss */
 .image-left {
   float: left;
-  margin: 0 24px 0.42857em 0;
+  margin: 0 24px 0.375em 0;
 }
 
 /* line 25, ../sass/global/_images.scss */
 .image-right {
   float: right;
-  margin: 0 0 0.42857em 24px;
+  margin: 0 0 0.375em 24px;
 }
 
 /* line 13, ../sass/global/_tables.scss */
@@ -471,7 +471,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  margin-bottom: 0.85714em;
+  margin-bottom: 0.75em;
 }
 
 /* line 21, ../sass/global/_tables.scss */

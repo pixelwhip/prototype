@@ -1,15 +1,21 @@
 <?php
 
 /**
+ * MENUS
+ */
+
+/**
  * Overrides theme_menu_tree() for the main menu.
  */
+
 function prototype_menu_tree__main_menu($variables) {
   return '<ul class="nav nav-inline">' . $variables['tree'] . '</ul>';
 }
 
 /**
- * Implements hook_preprocess_menu_link().
+ * Implements hook_preprocess_menu_link()
  */
+
 function prototype_preprocess_menu_link(&$vars) {
   /* Set shortcut variables. Hooray for less typing! */
   $menu = $vars['element']['#original_link']['menu_name'];
@@ -23,25 +29,13 @@ function prototype_preprocess_menu_link(&$vars) {
 }
 
 /**
- * Implements hook_preprocess_html().
+ * FIELDS
  */
-function prototype_preprocess_html(&$vars) {
-
-  // Add Require.js to Prototype.
-  $base_path = drupal_get_path('theme', 'prototype');
-  $require_path = $base_path . '/' . 'components/requirejs/require.js';
-  $main_path = $base_path . '/js/main.js';
-  $main = '<script data-main="' . $main_path . '" src="' . $require_path . '"></script>';
-  $requirejs = array(
-    '#type' => 'markup',
-    '#markup' => $main,
-  );
-  drupal_add_html_head($requirejs, 'requirejs');
-}
 
 /**
- * Implements hook_preprocess_field().
+ * Implements hook_preprocess_field()
  */
+
 function prototype_preprocess_field(&$vars) {
   /* Set shortcut variables. Hooray for less typing! */
   $field = $vars['element']['#field_name'];

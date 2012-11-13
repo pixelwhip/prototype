@@ -33,4 +33,4 @@ stylesheets[all][] = css/screen.css
 stylesheets[print][] = css/override/keep/print.css
 
 ;-------------- J S -------------
-scripts[] = js/main.js
+;scripts[] = js/main.js

@@ -79,7 +79,7 @@ $royal-black:        #091827;
 // Semantic color variables.
 
 $clr-neutral:       $gray-light;      // Default nuetral color
-$clr-text:          $gray-dark;       // Default body copy color
+$clr-text:          $gray-darker;       // Default body copy color
 $clr-link:          $blue-darker;     // Default link color
 $clr-accent:        $orange-dark;     // Default accent color
 $clr-border:        $gray-lighter;    // Default border and required color
@@ -92,21 +92,21 @@ $clr-error:         $red;             // Default error and required color
 //-----------------------------------------------------------------------------
 
 //  Typefaces
-$ff-body:     "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
-$ff-heading:  "Droid Serif", Georgia, serif;
+$ff-body:     "Droid Serif", Georgia, serif;
+$ff-heading:  "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
 $ff-display:  $ff-heading;
 
 //  Font sizes
-$fs-xxs:     11px;
-$fs-xs:      12px;
-$fs-s:       13px;
-$fs-m:       14px;
-$fs-l:       15px;
-$fs-xl:      16px;
-$fs-xxl:     18px;
-$fs-xxxl:    24px;
-$fs-xxxxl:   36px;
-$fs-xxxxxl:  50px;
+$fs-xxs:     12px;
+$fs-xs:      13px;
+$fs-s:       14px;
+$fs-m:       16px;
+$fs-l:       21px;
+$fs-xl:      24px;
+$fs-xxl:     28px;
+$fs-xxxl:    32px;
+$fs-xxxxl:   35px;
+$fs-xxxxxl:  40px;
 
 $fs-h1: $fs-xxxxl !default;
 $fs-h2: $fs-xxxl !default;
@@ -119,7 +119,7 @@ $fs-h6: $fs-xxs !default;
 $indent-amount: 48px !default;
 
 // Vertical Ryhthm
-$base-font-size:    14px;        // Font-size of your body copy.
+$base-font-size:    $fs-m;        // Font-size of your body copy.
 $base-line-height:  6px;         // Setting the base-line-height half.
                                  // the height of the desired body copy.
                                  // line-height helps prevent sparse.
@@ -165,3 +165,8 @@ $default-transition-duration: .15s;
 $default-text-shadow-color: rgba($gray-dark, .6);
 $default-text-shadow-blur: 1px;
 $default-text-shadow-v-offset: 1px;
+
+// Border Radius
+$radius-s: .25em;
+$radius-m: .5em;
+$radius-l: 50%;
