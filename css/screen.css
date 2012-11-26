@@ -53,7 +53,7 @@ input[type="submit"], .read-more,
   background-image: linear-gradient(bottom, #f0f1f2, #ffffff);
   border-color: #c3c7cc;
 }
-/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 #styleguide-header a:hover {
   color: #424c5e;
 }
@@ -88,7 +88,7 @@ input[type="submit"], .views-submit-button > .form-submit, .button--primary {
   border-color: #de4510;
   background-color: #68707e;
 }
-/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 input[type="submit"]:hover, .views-submit-button > .form-submit:hover, .button--primary:hover {
   color: white;
 }
@@ -428,12 +428,12 @@ table {
   border-spacing: 0;
 }
 
-/* line 61, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 61, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
   font-size: 100%;
 }
 
-/* line 64, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 64, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 16px;
   line-height: 0.375em;
@@ -454,10 +454,9 @@ h1 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0.17143em;
-  color: #e55c16;
 }
 
-/* line 28, ../sass/global/_base.scss */
+/* line 27, ../sass/global/_base.scss */
 h2 {
   font-size: 2em;
   line-height: 1.125em;
@@ -466,10 +465,9 @@ h2 {
   padding-bottom: 0em;
   margin-bottom: 0.1875em;
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
-  color: #e55c16;
 }
 
-/* line 35, ../sass/global/_base.scss */
+/* line 33, ../sass/global/_base.scss */
 h3 {
   font-size: 1.5em;
   line-height: 1.25em;
@@ -478,10 +476,9 @@ h3 {
   padding-bottom: 0em;
   margin-bottom: 0.5em;
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
-  color: #e55c16;
 }
 
-/* line 42, ../sass/global/_base.scss */
+/* line 39, ../sass/global/_base.scss */
 h4 {
   font-size: 1em;
   line-height: 1.5em;
@@ -490,10 +487,9 @@ h4 {
   padding-bottom: 0em;
   margin-bottom: 0em;
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
-  color: #e55c16;
 }
 
-/* line 49, ../sass/global/_base.scss */
+/* line 45, ../sass/global/_base.scss */
 h5 {
   font-size: 0.875em;
   line-height: 1.28571em;
@@ -503,7 +499,7 @@ h5 {
   margin-bottom: 0em;
 }
 
-/* line 54, ../sass/global/_base.scss */
+/* line 50, ../sass/global/_base.scss */
 h6 {
   font-size: 0.75em;
   line-height: 1.5em;
@@ -515,51 +511,51 @@ h6 {
   text-transform: uppercase;
 }
 
-/* line 64, ../sass/global/_base.scss */
+/* line 60, ../sass/global/_base.scss */
 a {
   color: #254590;
   text-decoration: none;
 }
-/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:hover {
   color: #1b3267;
 }
-/* line 4, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 73, ../sass/global/_base.scss */
+/* line 69, ../sass/global/_base.scss */
 p {
   margin: 0 0 0.75em;
 }
 
-/* line 80, ../sass/global/_base.scss */
+/* line 76, ../sass/global/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 88, ../sass/global/_base.scss */
+/* line 84, ../sass/global/_base.scss */
 dl {
   margin-bottom: 1.125em;
 }
 
-/* line 92, ../sass/global/_base.scss */
+/* line 88, ../sass/global/_base.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 96, ../sass/global/_base.scss */
+/* line 92, ../sass/global/_base.scss */
 dd {
   margin-left: 24px;
 }
 
-/* line 103, ../sass/global/_base.scss */
+/* line 99, ../sass/global/_base.scss */
 .clearfix {
   *zoom: 1;
 }
-/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .clearfix:after {
   content: "\0020";
   display: block;
@@ -569,7 +565,7 @@ dd {
   visibility: hidden;
 }
 
-/* line 107, ../sass/global/_base.scss */
+/* line 103, ../sass/global/_base.scss */
 .intro {
   font-size: 1.75em;
   line-height: 1.28571em;
@@ -894,23 +890,23 @@ tr.even {
 }
 
 /* line 11, ../sass/global/_layout.scss */
-.page-width {
+.l-constrained {
   *position: relative;
   *zoom: 1;
   padding: 0 12px;
 }
-/* line 52, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
-.page-width:before, .page-width:after {
+/* line 52, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+.l-constrained:before, .l-constrained:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
-.page-width:after {
+/* line 56, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+.l-constrained:after {
   clear: both;
 }
 @media (min-width: 1080px) {
   /* line 11, ../sass/global/_layout.scss */
-  .page-width {
+  .l-constrained {
     width: 1104px;
     margin: 0 auto;
   }
