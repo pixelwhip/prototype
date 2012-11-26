@@ -7,13 +7,18 @@
 // ----------------------------------------------------------------------------
 
 // Establish Vertical rhythm.
-@include establish-baseline();
+* html {
+  font-size: 100% * $base-font-size / $browser-default-font-size;
+}
 
-html > body {
-  // Override the default line height to allow for smaller baseline heights.
+html {
+  font-size: $base-font-size;
+  // Override the default line height to allow for smaller baseline increments.
   @include adjust-leading-to(4);
+}
+
+body {
   color: $clr-text;
-  font-family: $ff-body;
 }
 
 // Headings
@@ -45,6 +50,7 @@ h4 {
 h5 {
   @include adjust-font-size-to($fs-h5);
   @include rhythm(4, 0, 0, 0, $fs-h5);
+  font-family: $ff-heading;
 }
 
 h6 {

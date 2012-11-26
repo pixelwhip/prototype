@@ -428,25 +428,23 @@ table {
   border-spacing: 0;
 }
 
-/* line 61, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 10, ../sass/global/_base.scss */
 * html {
   font-size: 100%;
 }
 
-/* line 64, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 14, ../sass/global/_base.scss */
 html {
   font-size: 16px;
-  line-height: 0.375em;
-}
-
-/* line 12, ../sass/global/_base.scss */
-html > body {
   line-height: 1.5em;
-  color: #424c5e;
-  font-family: "Droid Serif", Georgia, serif;
 }
 
-/* line 22, ../sass/global/_base.scss */
+/* line 20, ../sass/global/_base.scss */
+body {
+  color: #424c5e;
+}
+
+/* line 27, ../sass/global/_base.scss */
 h1 {
   font-size: 2.1875em;
   line-height: 1.2em;
@@ -456,7 +454,7 @@ h1 {
   margin-bottom: 0.17143em;
 }
 
-/* line 27, ../sass/global/_base.scss */
+/* line 32, ../sass/global/_base.scss */
 h2 {
   font-size: 2em;
   line-height: 1.125em;
@@ -467,7 +465,7 @@ h2 {
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
 }
 
-/* line 33, ../sass/global/_base.scss */
+/* line 38, ../sass/global/_base.scss */
 h3 {
   font-size: 1.5em;
   line-height: 1.25em;
@@ -478,7 +476,7 @@ h3 {
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
 }
 
-/* line 39, ../sass/global/_base.scss */
+/* line 44, ../sass/global/_base.scss */
 h4 {
   font-size: 1em;
   line-height: 1.5em;
@@ -489,7 +487,7 @@ h4 {
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
 }
 
-/* line 45, ../sass/global/_base.scss */
+/* line 50, ../sass/global/_base.scss */
 h5 {
   font-size: 0.875em;
   line-height: 1.28571em;
@@ -497,9 +495,10 @@ h5 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
 }
 
-/* line 50, ../sass/global/_base.scss */
+/* line 56, ../sass/global/_base.scss */
 h6 {
   font-size: 0.75em;
   line-height: 1.5em;
@@ -511,7 +510,7 @@ h6 {
   text-transform: uppercase;
 }
 
-/* line 60, ../sass/global/_base.scss */
+/* line 66, ../sass/global/_base.scss */
 a {
   color: #254590;
   text-decoration: none;
@@ -525,33 +524,33 @@ a:hover {
   text-decoration: underline;
 }
 
-/* line 69, ../sass/global/_base.scss */
+/* line 75, ../sass/global/_base.scss */
 p {
   margin: 0 0 0.75em;
 }
 
-/* line 76, ../sass/global/_base.scss */
+/* line 82, ../sass/global/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 84, ../sass/global/_base.scss */
+/* line 90, ../sass/global/_base.scss */
 dl {
   margin-bottom: 1.125em;
 }
 
-/* line 88, ../sass/global/_base.scss */
+/* line 94, ../sass/global/_base.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 92, ../sass/global/_base.scss */
+/* line 98, ../sass/global/_base.scss */
 dd {
   margin-left: 24px;
 }
 
-/* line 99, ../sass/global/_base.scss */
+/* line 105, ../sass/global/_base.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -565,7 +564,7 @@ dd {
   visibility: hidden;
 }
 
-/* line 103, ../sass/global/_base.scss */
+/* line 109, ../sass/global/_base.scss */
 .intro {
   font-size: 1.75em;
   line-height: 1.28571em;
