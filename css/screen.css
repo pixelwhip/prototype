@@ -1724,7 +1724,23 @@ h2.styleguide {
   text-transform: capitalize;
 }
 
-/* line 55, ../sass/components/_styleguide.scss */
+/* line 51, ../sass/components/_styleguide.scss */
+.styleguide-description {
+  color: #666666;
+}
+/* line 54, ../sass/components/_styleguide.scss */
+.styleguide-description > code {
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  background-color: #ecf3f7;
+  border: 1px solid #c7c7c7;
+  padding: 0 .5em;
+}
+
+/* line 62, ../sass/components/_styleguide.scss */
 div.styleguide {
   padding: 2.25em 0;
   border-bottom: none;

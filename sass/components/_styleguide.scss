@@ -49,7 +49,14 @@ h2.styleguide {
 }
 
 .styleguide-description {
+  color: $gray-dark;
 
+  > code {
+    @include border-radius(.25em);
+    background-color: $blue-white;
+    border: 1px solid $gray-lighter;
+    padding: 0 .5em;
+  }
 }
 
 div.styleguide {
