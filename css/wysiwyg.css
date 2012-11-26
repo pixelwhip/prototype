@@ -306,7 +306,7 @@ html {
 
 /* line 20, ../sass/global/_base.scss */
 body {
-  color: #424c5e;
+  color: #333333;
 }
 
 /* line 27, ../sass/global/_base.scss */
@@ -317,9 +317,10 @@ h1 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0.17143em;
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
 }
 
-/* line 32, ../sass/global/_base.scss */
+/* line 33, ../sass/global/_base.scss */
 h2 {
   font-size: 2em;
   line-height: 1.125em;
@@ -330,7 +331,7 @@ h2 {
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
 }
 
-/* line 38, ../sass/global/_base.scss */
+/* line 39, ../sass/global/_base.scss */
 h3 {
   font-size: 1.5em;
   line-height: 1.25em;
@@ -341,7 +342,7 @@ h3 {
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
 }
 
-/* line 44, ../sass/global/_base.scss */
+/* line 45, ../sass/global/_base.scss */
 h4 {
   font-size: 1em;
   line-height: 1.5em;
@@ -352,7 +353,7 @@ h4 {
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
 }
 
-/* line 50, ../sass/global/_base.scss */
+/* line 51, ../sass/global/_base.scss */
 h5 {
   font-size: 0.875em;
   line-height: 1.28571em;
@@ -363,7 +364,7 @@ h5 {
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
 }
 
-/* line 56, ../sass/global/_base.scss */
+/* line 57, ../sass/global/_base.scss */
 h6 {
   font-size: 0.75em;
   line-height: 1.5em;
@@ -375,7 +376,7 @@ h6 {
   text-transform: uppercase;
 }
 
-/* line 66, ../sass/global/_base.scss */
+/* line 67, ../sass/global/_base.scss */
 a {
   color: #254590;
   text-decoration: none;
@@ -389,33 +390,33 @@ a:hover {
   text-decoration: underline;
 }
 
-/* line 75, ../sass/global/_base.scss */
+/* line 76, ../sass/global/_base.scss */
 p {
   margin: 0 0 0.75em;
 }
 
-/* line 82, ../sass/global/_base.scss */
+/* line 83, ../sass/global/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 90, ../sass/global/_base.scss */
+/* line 91, ../sass/global/_base.scss */
 dl {
   margin-bottom: 1.125em;
 }
 
-/* line 94, ../sass/global/_base.scss */
+/* line 95, ../sass/global/_base.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 98, ../sass/global/_base.scss */
+/* line 99, ../sass/global/_base.scss */
 dd {
   margin-left: 24px;
 }
 
-/* line 105, ../sass/global/_base.scss */
+/* line 106, ../sass/global/_base.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -429,7 +430,7 @@ dd {
   visibility: hidden;
 }
 
-/* line 109, ../sass/global/_base.scss */
+/* line 110, ../sass/global/_base.scss */
 .intro {
   font-size: 1.75em;
   line-height: 1.28571em;
@@ -441,9 +442,9 @@ dd {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-shadow: rgba(104, 112, 126, 0.6) 0 1px 3px;
-  -moz-box-shadow: rgba(104, 112, 126, 0.6) 0 1px 3px;
-  box-shadow: rgba(104, 112, 126, 0.6) 0 1px 3px;
+  -webkit-box-shadow: rgba(102, 102, 102, 0.6) 0 1px 3px;
+  -moz-box-shadow: rgba(102, 102, 102, 0.6) 0 1px 3px;
+  box-shadow: rgba(102, 102, 102, 0.6) 0 1px 3px;
   padding: 4px;
   background-color: white;
 }
@@ -483,7 +484,7 @@ th,
 td {
   padding: 8px;
   vertical-align: top;
-  border-top: 1px solid #c3c7cc;
+  border-top: 1px solid #b3b3b3;
 }
 
 /* line 45, ../sass/global/_tables.scss */
@@ -498,7 +499,7 @@ thead:first-child tr:first-child td {
 
 /* line 50, ../sass/global/_tables.scss */
 tbody + tbody {
-  border-top: 2px solid #c3c7cc;
+  border-top: 2px solid #b3b3b3;
 }
 
 /* line 59, ../sass/global/_tables.scss */
@@ -509,7 +510,7 @@ tbody + tbody {
 
 /* line 67, ../sass/global/_tables.scss */
 tr.odd {
-  background-color: #f0f1f2;
+  background-color: #f0f0f0;
 }
 
 /* line 68, ../sass/global/_tables.scss */

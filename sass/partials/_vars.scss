@@ -30,15 +30,15 @@ $legacy-support-for-ie7: true; // Overrides default set in Support partial.
 $white:             #ffffff;
 $black:             #000000;
 
-$gray-white:        #f0f1f2;
-$gray-lightest:     #e1e3e6;
-$gray-lighter:      #d2d5d9;
-$gray-light:        #c3c7cc;
-$gray:              #a5aab2;
-$gray-dark:         #68707e;
-$gray-darker:       #424c5e;
-$gray-darkest:      #182643;
-$gray-black:        #181818;
+$gray-white:        #f0f0f0;
+$gray-lightest:     #dbdbdb;
+$gray-lighter:      #c7c7c7;
+$gray-light:        #b3b3b3;
+$gray:              #999;
+$gray-dark:         #666;
+$gray-darker:       #333;
+$gray-darkest:      #292929;
+$gray-black:        #141414;
 
 $red:               #B52828;
 $red-dark:          #95223C;
@@ -79,7 +79,7 @@ $royal-black:        #091827;
 // Semantic color variables.
 
 $clr-neutral:       $gray-light;      // Default nuetral color
-$clr-text:          $gray-darker;       // Default body copy color
+$clr-text:          $gray-darker;     // Default body copy color
 $clr-link:          $blue-darker;     // Default link color
 $clr-accent:        $orange-dark;     // Default accent color
 $clr-border:        $gray-lighter;    // Default border and required color
