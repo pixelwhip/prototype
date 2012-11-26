@@ -1717,13 +1717,15 @@ html[xmlns] .slides {
 
 /* line 44, ../sass/components/_styleguide.scss */
 h2.styleguide {
-  font-size: 1.3125em;
-  line-height: 1.42857em;
-  margin: 0.57143em 0 0;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  margin: 1.5em 0 0.25em;
+  color: #292929;
+  text-transform: capitalize;
 }
 
-/* line 49, ../sass/components/_styleguide.scss */
+/* line 55, ../sass/components/_styleguide.scss */
 div.styleguide {
-  padding: 0.75em 0;
+  padding: 2.25em 0;
   border-bottom: none;
 }
