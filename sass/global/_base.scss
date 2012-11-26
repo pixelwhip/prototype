@@ -77,6 +77,13 @@ p {
   margin: 0 0 rhythm(2);
 }
 
+blockquote {
+  margin: rhythm(2) 0 rhythm(2) $indent-amount;
+  font-style: italic;
+}
+
+
+
 // Images
 //-----------------------------------------------------------------------------
 

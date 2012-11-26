@@ -74,7 +74,7 @@ strong {
 
 /* line 134, ../sass/global/_normalize.scss */
 blockquote {
-  margin: 0.375em 48px;
+  margin: 0.375em 3em;
 }
 
 /* line 143, ../sass/global/_normalize.scss */
@@ -100,6 +100,7 @@ code,
 kbd,
 samp {
   font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -157,14 +158,14 @@ ul {
 
 /* line 253, ../sass/global/_normalize.scss */
 dd {
-  margin: 0 0 0 48px;
+  margin: 0 0 0 3em;
 }
 
 /* line 263, ../sass/global/_normalize.scss */
 menu,
 ol,
 ul {
-  padding: 0 0 0 48px;
+  padding: 0 0 0 3em;
 }
 
 /* line 272, ../sass/global/_normalize.scss */
@@ -317,7 +318,7 @@ h1 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0.17143em;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* line 33, ../sass/global/_base.scss */
@@ -328,7 +329,7 @@ h2 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0.1875em;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* line 39, ../sass/global/_base.scss */
@@ -339,7 +340,7 @@ h3 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0.5em;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* line 45, ../sass/global/_base.scss */
@@ -350,7 +351,7 @@ h4 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* line 51, ../sass/global/_base.scss */
@@ -361,7 +362,7 @@ h5 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* line 57, ../sass/global/_base.scss */
@@ -395,28 +396,34 @@ p {
   margin: 0 0 0.75em;
 }
 
-/* line 83, ../sass/global/_base.scss */
+/* line 80, ../sass/global/_base.scss */
+blockquote {
+  margin: 0.75em 0 0.75em 3em;
+  font-style: italic;
+}
+
+/* line 90, ../sass/global/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 91, ../sass/global/_base.scss */
+/* line 98, ../sass/global/_base.scss */
 dl {
   margin-bottom: 1.125em;
 }
 
-/* line 95, ../sass/global/_base.scss */
+/* line 102, ../sass/global/_base.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 99, ../sass/global/_base.scss */
+/* line 106, ../sass/global/_base.scss */
 dd {
   margin-left: 24px;
 }
 
-/* line 106, ../sass/global/_base.scss */
+/* line 113, ../sass/global/_base.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -430,7 +437,7 @@ dd {
   visibility: hidden;
 }
 
-/* line 110, ../sass/global/_base.scss */
+/* line 117, ../sass/global/_base.scss */
 .intro {
   font-size: 1.75em;
   line-height: 1.28571em;

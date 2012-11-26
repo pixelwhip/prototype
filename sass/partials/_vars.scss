@@ -8,16 +8,6 @@
 //-----------------------------------------------------------------------------
 
 // Setting this to false will result in smaller output, but no support for ie6 hacks.
-$legacy-support-for-ie6: false; // Overrides default set in Support partial.
-
-// Setting this to false will result in smaller output, but no support for ie7 hacks.
-$legacy-support-for-ie7: true; // Overrides default set in Support partial.
-
-
-// IE Support
-//-----------------------------------------------------------------------------
-
-// Setting this to false will result in smaller output, but no support for ie6 hacks.
 // $legacy-support-for-ie6: true; // Overrides default set in Support partial.
 
 // Setting this to false will result in smaller output, but no support for ie7 hacks.
@@ -92,8 +82,13 @@ $clr-error:         $red;             // Default error and required color
 //-----------------------------------------------------------------------------
 
 //  Typefaces
-$ff-body:     "Droid Serif", Georgia, serif;
-$ff-heading:  "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+
+$ff-mono:     Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New", Courier, monospace;;
+$ff-sans:     "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ff-serif:    Georgia, serif;
+
+$ff-body:     "Droid Serif", $ff-serif;
+$ff-heading:  "Open Sans", $ff-sans;
 $ff-display:  $ff-heading;
 
 //  Font sizes
@@ -116,10 +111,10 @@ $fs-h5: $fs-s !default;
 $fs-h6: $fs-xxs !default;
 
 // The amount lists and blockquotes are indented.
-$indent-amount: 48px !default;
+$indent-amount: 3em !default;
 
 // Vertical Ryhthm
-$base-font-size:    $fs-m;        // Font-size of your body copy.
+$base-font-size:    $fs-m;       // Font-size of your body copy.
 $base-line-height:  6px;         // Setting the base-line-height half.
                                  // the height of the desired body copy.
                                  // line-height helps prevent sparse.
