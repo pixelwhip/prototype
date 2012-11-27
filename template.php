@@ -15,7 +15,6 @@ function prototype_menu_tree__main_menu($variables) {
 /**
  * Implements hook_preprocess_menu_link()
  */
-
 function prototype_preprocess_menu_link(&$vars) {
   /* Set shortcut variables. Hooray for less typing! */
   $menu = $vars['element']['#original_link']['menu_name'];
@@ -35,7 +34,6 @@ function prototype_preprocess_menu_link(&$vars) {
 /**
  * Implements hook_preprocess_field()
  */
-
 function prototype_preprocess_field(&$vars) {
   /* Set shortcut variables. Hooray for less typing! */
   $field = $vars['element']['#field_name'];
@@ -77,7 +75,6 @@ function prototype_preprocess_field(&$vars) {
 /**
  * Implements hook_preprocess_node()
  */
-
 function prototype_preprocess_node(&$vars) {
   /* Set shortcut variables. Hooray for less typing! */
   $type = $vars['type'];
@@ -101,7 +98,6 @@ function prototype_preprocess_node(&$vars) {
 /**
  * Implements hook_preprocess_block()
  */
-
 function prototype_preprocess_block(&$vars) {
   /* Set shortcut variables. Hooray for less typing! */
   $block_id = $vars['block']->module . '-' . $vars['block']->delta;
@@ -134,7 +130,6 @@ function prototype_preprocess_block(&$vars) {
 /**
  * Implements hook_form_alter
  */
-
 function prototype_form_alter(&$form, &$form_state, $form_id) {
   /* Add placeholder text to a form */
   if ($form_id == 'search_block_form') {
