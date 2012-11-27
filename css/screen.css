@@ -706,45 +706,106 @@ select {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 22, ../sass/global/_forms.scss */
+/* line 23, ../sass/global/_forms.scss */
 .machine-name-label {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 
-/* line 27, ../sass/global/_forms.scss */
+/* line 28, ../sass/global/_forms.scss */
 .machine-name-value {
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New", Courier, monospace;
   margin: 0 .5em;
 }
 
-/* line 35, ../sass/global/_forms.scss */
+/* line 37, ../sass/global/_forms.scss */
 .form-type-checkboxes .form-type-checkbox,
 .form-type-radios .form-type-radio {
   margin: 0.375em 0;
 }
 
-/* line 41, ../sass/global/_forms.scss */
+/* line 44, ../sass/global/_forms.scss */
 html.js input.form-autocomplete {
   background-position: 100% 6px;
 }
-/* line 44, ../sass/global/_forms.scss */
+/* line 47, ../sass/global/_forms.scss */
 html.js input.form-autocomplete.throbbing {
   background-position: 100% -14px;
 }
 
-/* line 51, ../sass/global/_forms.scss */
+/* line 55, ../sass/global/_forms.scss */
 .form-required,
 .marker {
   color: #b52828;
   font-weight: bold;
 }
 
-/* line 59, ../sass/global/_forms.scss */
+/* line 64, ../sass/global/_forms.scss */
 input.error,
 textarea.error,
 select.error {
   border: 2px solid red;
+}
+
+/* line 70, ../sass/global/_forms.scss */
+.password-strength, div.password-confirm {
+  font-size: 0.875em;
+  line-height: 1.28571em;
+  margin-top: 1.28571em;
+  width: 17em;
+  float: right;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 78, ../sass/global/_forms.scss */
+.password-strength-title {
+  display: inline;
+}
+
+/* line 82, ../sass/global/_forms.scss */
+.password-strength-text {
+  float: right;
+  font-weight: bold;
+}
+
+/* line 87, ../sass/global/_forms.scss */
+.password-indicator {
+  height: 0.21429em;
+  background-color: #dbdbdb;
+}
+/* line 91, ../sass/global/_forms.scss */
+.password-indicator > .indicator {
+  height: 100%;
+  width: 0;
+  background-color: #999999;
+}
+
+/* line 99, ../sass/global/_forms.scss */
+input.password-confirm,
+input.password-field {
+  width: 16em;
+}
+
+/* line 104, ../sass/global/_forms.scss */
+div.password-confirm {
+  float: right;
+  visibility: hidden;
+  width: 17em;
+}
+
+/* line 111, ../sass/global/_forms.scss */
+.password-suggestions {
+  font-size: 0.8125em;
+  line-height: 1.38462em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 117, ../sass/global/_forms.scss */
+.confirm-parent,
+.password-parent {
+  clear: left;
+  margin: 0;
+  width: 36.3em;
 }
 
 /* line 13, ../sass/global/_tables.scss */
@@ -1521,7 +1582,7 @@ html[xmlns] .slides {
 }
 /* line 28, ../sass/components/_messages.scss */
 .messages.status {
-  background-color: #9cc524;
+  background-color: #8cbc1a;
 }
 
 /* line 7, ../sass/components/_pager.scss */
@@ -1602,6 +1663,67 @@ html[xmlns] .slides {
   background-color: #b3b3b3;
   padding: 0 8px;
   margin: 0.46154em 2px;
+}
+
+/* line 7, ../sass/components/_password.scss */
+.password-strength, div.password-confirm {
+  font-size: 0.875em;
+  line-height: 1.28571em;
+  margin-top: 1.28571em;
+  width: 17em;
+  float: right;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 15, ../sass/components/_password.scss */
+.password-strength-title {
+  display: inline;
+}
+
+/* line 19, ../sass/components/_password.scss */
+.password-strength-text {
+  float: right;
+  font-weight: bold;
+}
+
+/* line 24, ../sass/components/_password.scss */
+.password-indicator {
+  height: 0.21429em;
+  background-color: #dbdbdb;
+}
+/* line 28, ../sass/components/_password.scss */
+.password-indicator > .indicator {
+  height: 100%;
+  width: 0;
+  background-color: #999999;
+}
+
+/* line 36, ../sass/components/_password.scss */
+input.password-confirm,
+input.password-field {
+  width: 16em;
+}
+
+/* line 41, ../sass/components/_password.scss */
+div.password-confirm {
+  float: right;
+  visibility: hidden;
+  width: 17em;
+}
+
+/* line 48, ../sass/components/_password.scss */
+.password-suggestions {
+  font-size: 0.8125em;
+  line-height: 1.38462em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 54, ../sass/components/_password.scss */
+.confirm-parent,
+.password-parent {
+  clear: left;
+  margin: 0;
+  width: 36.3em;
 }
 
 /* line 7, ../sass/components/_search.scss */

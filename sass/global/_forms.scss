@@ -18,7 +18,8 @@
   font-family: $ff-sans;
 }
 
-// Descriptions with machine name.
+
+// MACHINE NAMES
 .machine-name-label {
   font-family: $ff-sans;
   font-weight: bold;
@@ -29,14 +30,16 @@
   margin: 0 .5em;
 }
 
-// Checkboxes & Radios
+
+// CHECKBOXES & RADIOS
 // Since these are groups of related form-items, we reduce the spacing a bit.
 .form-type-checkboxes .form-type-checkbox,
 .form-type-radios .form-type-radio {
   margin: rhythm(1) 0;
 }
 
-// Autocomplete
+
+// AUTOCOMPLETE
 // Adjust the background position to account for the larger input size.
 html.js input.form-autocomplete {
   background-position: 100% 6px;
@@ -46,17 +49,73 @@ html.js input.form-autocomplete {
   }
 }
 
-// Required
+
+// REQUIRED
 .form-required,
 .marker {
   color: $clr-error;
   font-weight: bold;
 }
 
-// Errors
+
+// ERRORS
 input.error,
 textarea.error,
 select.error {
   border: 2px solid red;
 }
 
+
+// PASSWORD
+.password-strength {
+  @include adjust-font-size-to($fs-s);
+  margin-top: rhythm(3, $fs-s);
+  width: 17em;
+  float: right;  // LTR
+  font-family: $ff-sans;
+}
+
+.password-strength-title {
+  display: inline;
+}
+
+.password-strength-text {
+  float: right; // LTR
+  font-weight: bold;
+}
+
+.password-indicator {
+  height: rhythm(.5, $fs-s);
+  background-color: $gray-lightest;
+
+  > .indicator {
+    height: 100%;
+    width: 0;
+    background-color: $gray;
+  }
+}
+
+input.password-confirm,
+input.password-field {
+  width: 16em;
+}
+
+// Over-specified becuase the input also has .password-confirm.
+div.password-confirm {
+  @extend .password-strength;
+  float: right;  // LTR
+  visibility: hidden;
+  width: 17em;
+}
+
+.password-suggestions {
+  @include adjust-font-size-to($fs-xs);
+  font-family: $ff-sans;
+}
+
+.confirm-parent,
+.password-parent {
+  clear: left; // LTR
+  margin: 0;
+  width: 36.3em;
+}
