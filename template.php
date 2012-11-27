@@ -136,7 +136,3 @@ function prototype_form_alter(&$form, &$form_state, $form_id) {
     $form['search_block_form']['#attributes']['placeholder'] = "Enter a term";
   }
 }
-
-function prototype_page_alter(&$page) {
-  dpm($page);
-}
