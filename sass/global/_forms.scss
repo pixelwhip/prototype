@@ -1,169 +1,61 @@
 //
 // @file
-// Global form styles.
+// Form component.
 //
+// Ideally we would be sticking to .form-item, .form-item-label and
+// .form-item-description, but we need to make some allowances for drupal's
+// default markup.
 // ----------------------------------------------------------------------------
 
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  @include box-shadow(0 0 5px $gray);
+
+.form-item,
+.form-actions {
+  margin: rhythm(2) 0;
 }
 
-.form-item {
-  margin: 0 0 1em 0;
+.form-item-description {
+  @include adjust-font-size-to($fs-xs);
+  font-family: $ff-sans;
 }
 
-//  Labels
-// ---------------------
-
-label,
-fieldset-legend {
-  @include adjust-font-size-to(12px);
-  font-weight: 600;
-  margin-bottom: rhythm(1, 12px);
+// Descriptions with machine name.
+.machine-name-label {
+  font-family: $ff-sans;
+  font-weight: bold;
 }
 
-.form-required {
+.machine-name-value {
+  font-family: $ff-mono;
+}
+
+// Checkboxes & Radios
+// Since these are groups of related form-items, we reduce the spacing a bit.
+.form-type-checkboxes .form-type-checkbox,
+.form-type-radios .form-type-radio {
+  margin: rhythm(1) 0;
+}
+
+// Autocomplete
+// Adjust the background position to account for the larger input size.
+html.js input.form-autocomplete {
+  background-position: 100% 6px;
+
+  &.throbbing {
+    background-position: 100% -14px;
+  }
+}
+
+// Required
+.form-required,
+.marker {
   color: $clr-error;
   font-weight: bold;
 }
 
-//  Form Fields
-// ---------------------
-
-textarea,
-select,
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"] {
-  @include border-radius(3px);
-  @include box-sizing(border-box);
-  padding: 2px;
-  margin-bottom: rhythm(1);
-  max-width: 100%;
-  background-color: $white;
-  border: 1px $gray solid;
-  color: $gray-darker;
-  &:focus {
-    border-color: $gray;
-  }
+// Errors
+input.error,
+textarea.error,
+select.error {
+  border: 2px solid red;
 }
 
-input[type="submit"] {
-  @extend %button;
-  @extend %button--small;
-  @extend %button--primary;
-}
-
-// Views exposed filters
-// ---------------------
-
-.views-exposed-form {
-  background-color: $gray-white;
-  padding: rhythm(1) $w-gutter-half 0;
-
-  @include breakpoint($tablet-wide) {
-    .views-widget,
-    label {
-      @include inline-block;
-      margin-right: $w-gutter-half;
-    }
-
-    select {
-      position: relative;
-      top: 2px;
-    }
-  }
-}
-
-.views-exposed-widget {
-  @include inline-block;
-  margin-right: $w-gutter;
-  float: left;
-}
-
-.views-submit-button > .form-submit {
-  @extend %button--primary;
-}
-
-.views-submit-button {
-  clear: left;
-
-  @include breakpoint($mobile) {
-    clear: none;
-  }
-}
-
-.views-submit-button,
-.views-reset-button {
-  @include breakpoint($mobile) {
-    position: relative;
-    top: 15px;
-    margin-right: $w-gutter-half;
-  }
-
-  @include breakpoint($tablet-wide) {
-    top: 0;
-  }
-}
-
-%form-layout-inline {
-  .form-item,
-  .form-actions {
-    @include clearfix;
-    padding-left: 228px + $w-gutter;
-    margin-bottom: rhythm(3);
-  }
-
-  .form-item  > label {
-    float: left;
-    width: 228px;
-    margin-left: -1 * (228px + $w-gutter);
-    text-align: right;
-  }
-
-  .form-radios > .form-item {
-    @include inline-block;
-    padding-left: 0;
-    margin-top: 0;
-
-    > label {
-      display: inline !important;
-      float: none;
-      margin: 0 $w-gutter 0 0;
-      width: auto;
-    }
-
-    > .form-radio {
-      display: inline;
-      margin: 0 2px;
-    }
-  }
-}
-
-#user-register-form,
-#user-login,
-#user-pass,
-#contact-site-form {
-  @extend %form-layout-inline;
-}
-
-// Push page titles over to match forms
-.page-user,
-.page-contact {
-  .page-title {
-    padding-left: 228px + $w-gutter;
-  }
-}

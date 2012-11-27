@@ -26,13 +26,13 @@ body {
 
 h1 {
   @include adjust-font-size-to($fs-h1);
-  @include rhythm(0, 0, 0, 1, $fs-h1);
+  @include rhythm(2, 0, 0, 2, $fs-h1);
   font-family: $ff-heading;
 }
 
 h2 {
   @include adjust-font-size-to($fs-h2);
-  @include rhythm(0, 0, 0, 1, $fs-h2);
+  @include rhythm(2, 0, 0, 2, $fs-h2);
   font-family: $ff-heading;
 }
 
@@ -83,7 +83,6 @@ blockquote {
 }
 
 
-
 // Images
 //-----------------------------------------------------------------------------
 
@@ -91,6 +90,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 
 // Definition Lists
 //-----------------------------------------------------------------------------
@@ -106,6 +106,80 @@ dt {
 dd {
   margin-left: $w-gutter;
 }
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  @include box-shadow(0 0 5px $gray);
+}
+
+
+// Form Labels
+// ---------------------
+
+label {
+  @include adjust-font-size-to($fs-s);
+  display: block;
+  margin-bottom: rhythm(1, $fs-s);
+  font-family: $ff-sans;
+  font-weight: bold;
+
+  // Labels on checkboxes and radios
+  &.option {
+    display: inline;
+    font-weight: normal;
+  }
+}
+
+
+// Forms
+//-----------------------------------------------------------------------------
+
+textarea,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  @include border-radius(3px);
+  @include box-sizing(border-box);
+  @include rhythm-borders(1px, .5);
+  padding: rhythm(.5);
+  margin-bottom: rhythm(1);
+  max-width: 100%;
+  background-color: $white;
+  border-color: $gray;
+  color: $gray-darker;
+
+  &:focus {
+    border-color: $gray;
+  }
+}
+
+input[type="file"] {
+  font-family: $ff-sans;
+}
+
+input[type="submit"] {
+  @extend %button;
+  @extend %button--small;
+  @extend %button--primary;
+}
+
+select {
+  @include adjust-font-size-to($fs-m);
+  margin-bottom: rhythm(1, $fs-s);
+}
+
 
 // Utility classes
 //-----------------------------------------------------------------------------
