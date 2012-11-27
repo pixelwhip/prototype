@@ -335,20 +335,20 @@ form {
 
 /* line 331, ../sass/global/_normalize.scss */
 fieldset {
-  border-color: #c0c0c0;
-  margin: 0 2px;
+  border-color: #c7c7c7;
+  margin: 0.75em 0;
   border-top-style: solid;
   border-top-width: 0.0625em;
-  padding-top: 0.06875em;
+  padding-top: 0.6875em;
   border-bottom-style: solid;
   border-bottom-width: 0.0625em;
-  padding-bottom: 0.18125em;
+  padding-bottom: 0.6875em;
   border-left-style: solid;
   border-left-width: 0.0625em;
-  padding-left: 0.17188em;
+  padding-left: 0.6875em;
   border-right-style: solid;
   border-right-width: 0.0625em;
-  padding-right: 0.17188em;
+  padding-right: 0.6875em;
 }
 
 /* line 347, ../sass/global/_normalize.scss */
@@ -696,7 +696,7 @@ select {
 /* line 12, ../sass/global/_forms.scss */
 .form-item,
 .form-actions {
-  margin: 0.75em 0;
+  margin: 1.5em 0;
 }
 
 /* line 16, ../sass/global/_forms.scss */
@@ -707,105 +707,58 @@ select {
 }
 
 /* line 23, ../sass/global/_forms.scss */
-.machine-name-label {
+.fieldset-legend {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 
 /* line 28, ../sass/global/_forms.scss */
+.fieldset-description {
+  font-size: 0.875em;
+  line-height: 1.28571em;
+  margin-bottom: 1.71429em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 36, ../sass/global/_forms.scss */
+.machine-name-label {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+/* line 41, ../sass/global/_forms.scss */
 .machine-name-value {
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New", Courier, monospace;
   margin: 0 .5em;
 }
 
-/* line 37, ../sass/global/_forms.scss */
+/* line 50, ../sass/global/_forms.scss */
 .form-type-checkboxes .form-type-checkbox,
 .form-type-radios .form-type-radio {
   margin: 0.375em 0;
 }
 
-/* line 44, ../sass/global/_forms.scss */
+/* line 57, ../sass/global/_forms.scss */
 html.js input.form-autocomplete {
   background-position: 100% 6px;
 }
-/* line 47, ../sass/global/_forms.scss */
+/* line 60, ../sass/global/_forms.scss */
 html.js input.form-autocomplete.throbbing {
   background-position: 100% -14px;
 }
 
-/* line 55, ../sass/global/_forms.scss */
+/* line 68, ../sass/global/_forms.scss */
 .form-required,
 .marker {
   color: #b52828;
   font-weight: bold;
 }
 
-/* line 64, ../sass/global/_forms.scss */
+/* line 77, ../sass/global/_forms.scss */
 input.error,
 textarea.error,
 select.error {
   border: 2px solid red;
-}
-
-/* line 70, ../sass/global/_forms.scss */
-.password-strength, div.password-confirm {
-  font-size: 0.875em;
-  line-height: 1.28571em;
-  margin-top: 1.28571em;
-  width: 17em;
-  float: right;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* line 78, ../sass/global/_forms.scss */
-.password-strength-title {
-  display: inline;
-}
-
-/* line 82, ../sass/global/_forms.scss */
-.password-strength-text {
-  float: right;
-  font-weight: bold;
-}
-
-/* line 87, ../sass/global/_forms.scss */
-.password-indicator {
-  height: 0.21429em;
-  background-color: #dbdbdb;
-}
-/* line 91, ../sass/global/_forms.scss */
-.password-indicator > .indicator {
-  height: 100%;
-  width: 0;
-  background-color: #999999;
-}
-
-/* line 99, ../sass/global/_forms.scss */
-input.password-confirm,
-input.password-field {
-  width: 16em;
-}
-
-/* line 104, ../sass/global/_forms.scss */
-div.password-confirm {
-  float: right;
-  visibility: hidden;
-  width: 17em;
-}
-
-/* line 111, ../sass/global/_forms.scss */
-.password-suggestions {
-  font-size: 0.8125em;
-  line-height: 1.38462em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* line 117, ../sass/global/_forms.scss */
-.confirm-parent,
-.password-parent {
-  clear: left;
-  margin: 0;
-  width: 36.3em;
 }
 
 /* line 13, ../sass/global/_tables.scss */
