@@ -8,7 +8,7 @@
 
 
 // Set the page width.
-.page-width {
+.l-constrained {
   @include zen-grid-container;
   padding: 0 12px;
 

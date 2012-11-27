@@ -17,6 +17,7 @@
 %button--tiny {
   @include adjust-font-size-to($fs-xxs);
   @include border-radius($radius-s);
+  font-family: $ff-sans;
   font-weight: bold;
   text-transform: uppercase;
   padding: rhythm(.25, $fs-xxs) 6px;
@@ -25,6 +26,7 @@
 %button--small {
   @include adjust-font-size-to($fs-xxs);
   @include border-radius($radius-s);
+  font-family: $ff-sans;
   font-weight: bold;
   text-transform: uppercase;
   padding: rhythm(.5, $fs-xxs) 10px;
@@ -33,6 +35,7 @@
 %button--medium {
   @include adjust-font-size-to($fs-l);
   @include border-radius($radius-s);
+  font-family: $ff-sans;
   font-weight: bold;
   padding: rhythm(.5, $fs-l) 13px;
 }

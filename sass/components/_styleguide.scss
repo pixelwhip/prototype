@@ -42,11 +42,24 @@
 }
 
 h2.styleguide {
-  @include adjust-font-size-to($fs-l);
-  margin: rhythm(2, $fs-l) 0 0;
+  @include adjust-font-size-to($fs-xl);
+  margin: rhythm(6, $fs-xl) 0 rhythm(1, $fs-xl);
+  color: $gray-darkest;
+  text-transform: capitalize;
+}
+
+.styleguide-description {
+  color: $gray-dark;
+
+  > code {
+    @include border-radius(.25em);
+    background-color: $blue-white;
+    border: 1px solid $gray-lighter;
+    padding: 0 .5em;
+  }
 }
 
 div.styleguide {
-  padding: rhythm(2) 0;
+  padding: rhythm(6) 0;
   border-bottom: none;
 }

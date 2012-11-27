@@ -8,16 +8,6 @@
 //-----------------------------------------------------------------------------
 
 // Setting this to false will result in smaller output, but no support for ie6 hacks.
-$legacy-support-for-ie6: false; // Overrides default set in Support partial.
-
-// Setting this to false will result in smaller output, but no support for ie7 hacks.
-$legacy-support-for-ie7: true; // Overrides default set in Support partial.
-
-
-// IE Support
-//-----------------------------------------------------------------------------
-
-// Setting this to false will result in smaller output, but no support for ie6 hacks.
 // $legacy-support-for-ie6: true; // Overrides default set in Support partial.
 
 // Setting this to false will result in smaller output, but no support for ie7 hacks.
@@ -30,15 +20,15 @@ $legacy-support-for-ie7: true; // Overrides default set in Support partial.
 $white:             #ffffff;
 $black:             #000000;
 
-$gray-white:        #f0f1f2;
-$gray-lightest:     #e1e3e6;
-$gray-lighter:      #d2d5d9;
-$gray-light:        #c3c7cc;
-$gray:              #a5aab2;
-$gray-dark:         #68707e;
-$gray-darker:       #424c5e;
-$gray-darkest:      #182643;
-$gray-black:        #181818;
+$gray-white:        #f0f0f0;
+$gray-lightest:     #dbdbdb;
+$gray-lighter:      #c7c7c7;
+$gray-light:        #b3b3b3;
+$gray:              #999;
+$gray-dark:         #666;
+$gray-darker:       #333;
+$gray-darkest:      #292929;
+$gray-black:        #141414;
 
 $red:               #B52828;
 $red-dark:          #95223C;
@@ -79,11 +69,11 @@ $royal-black:        #091827;
 // Semantic color variables.
 
 $clr-neutral:       $gray-light;      // Default nuetral color
-$clr-text:          $gray-darker;       // Default body copy color
+$clr-text:          $gray-darker;     // Default body copy color
 $clr-link:          $blue-darker;     // Default link color
 $clr-accent:        $orange-dark;     // Default accent color
 $clr-border:        $gray-lighter;    // Default border and required color
-$clr-status:        $green;           // Default status color
+$clr-status:        $green-dark;           // Default status color
 $clr-warning:       $orange;          // Default warning color
 $clr-error:         $red;             // Default error and required color
 
@@ -92,8 +82,12 @@ $clr-error:         $red;             // Default error and required color
 //-----------------------------------------------------------------------------
 
 //  Typefaces
-$ff-body:     "Droid Serif", Georgia, serif;
-$ff-heading:  "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+$ff-mono:     Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New", Courier, monospace;;
+$ff-sans:     "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ff-serif:    Georgia, serif;
+
+$ff-body:     "Droid Serif", $ff-serif;
+$ff-heading:  "Open Sans", $ff-sans;
 $ff-display:  $ff-heading;
 
 //  Font sizes
@@ -116,10 +110,10 @@ $fs-h5: $fs-s !default;
 $fs-h6: $fs-xxs !default;
 
 // The amount lists and blockquotes are indented.
-$indent-amount: 48px !default;
+$indent-amount: 3em !default;
 
 // Vertical Ryhthm
-$base-font-size:    $fs-m;        // Font-size of your body copy.
+$base-font-size:    $fs-m;       // Font-size of your body copy.
 $base-line-height:  6px;         // Setting the base-line-height half.
                                  // the height of the desired body copy.
                                  // line-height helps prevent sparse.

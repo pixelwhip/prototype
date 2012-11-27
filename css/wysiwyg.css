@@ -74,7 +74,7 @@ strong {
 
 /* line 134, ../sass/global/_normalize.scss */
 blockquote {
-  margin: 0.375em 48px;
+  margin: 0.375em 3em;
 }
 
 /* line 143, ../sass/global/_normalize.scss */
@@ -100,6 +100,7 @@ code,
 kbd,
 samp {
   font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -157,14 +158,14 @@ ul {
 
 /* line 253, ../sass/global/_normalize.scss */
 dd {
-  margin: 0 0 0 48px;
+  margin: 0 0 0 3em;
 }
 
 /* line 263, ../sass/global/_normalize.scss */
 menu,
 ol,
 ul {
-  padding: 0 0 0 48px;
+  padding: 0 0 0 3em;
 }
 
 /* line 272, ../sass/global/_normalize.scss */
@@ -197,20 +198,20 @@ form {
 
 /* line 331, ../sass/global/_normalize.scss */
 fieldset {
-  border-color: #c0c0c0;
-  margin: 0 2px;
+  border-color: #c7c7c7;
+  margin: 0.75em 0;
   border-top-style: solid;
   border-top-width: 0.0625em;
-  padding-top: 0.06875em;
+  padding-top: 0.6875em;
   border-bottom-style: solid;
   border-bottom-width: 0.0625em;
-  padding-bottom: 0.18125em;
+  padding-bottom: 0.6875em;
   border-left-style: solid;
   border-left-width: 0.0625em;
-  padding-left: 0.17188em;
+  padding-left: 0.6875em;
   border-right-style: solid;
   border-right-width: 0.0625em;
-  padding-right: 0.17188em;
+  padding-right: 0.6875em;
 }
 
 /* line 347, ../sass/global/_normalize.scss */
@@ -293,41 +294,45 @@ table {
   border-spacing: 0;
 }
 
-/* line 66, ../../../../../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-html {
+/* line 10, ../sass/global/_base.scss */
+* html {
   font-size: 100%;
-  line-height: 0.375em;
 }
 
-/* line 12, ../sass/global/_base.scss */
-html > body {
+/* line 14, ../sass/global/_base.scss */
+html {
+  font-size: 16px;
   line-height: 1.5em;
-  color: #424c5e;
-  font-family: "Droid Serif", Georgia, serif;
 }
 
-/* line 22, ../sass/global/_base.scss */
-h1 {
-  font-size: 2.1875em;
-  line-height: 1.2em;
-  margin-top: 0em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 0.17143em;
+/* line 20, ../sass/global/_base.scss */
+body {
+  color: #333333;
 }
 
 /* line 27, ../sass/global/_base.scss */
-h2 {
-  font-size: 2em;
-  line-height: 1.125em;
-  margin-top: 0em;
+h1 {
+  font-size: 2.1875em;
+  line-height: 1.2em;
+  margin-top: 0.34286em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.1875em;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+  margin-bottom: 0.34286em;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* line 33, ../sass/global/_base.scss */
+h2 {
+  font-size: 2em;
+  line-height: 1.125em;
+  margin-top: 0.375em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.375em;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 39, ../sass/global/_base.scss */
 h3 {
   font-size: 1.5em;
   line-height: 1.25em;
@@ -335,10 +340,10 @@ h3 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0.5em;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 39, ../sass/global/_base.scss */
+/* line 45, ../sass/global/_base.scss */
 h4 {
   font-size: 1em;
   line-height: 1.5em;
@@ -346,10 +351,10 @@ h4 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 45, ../sass/global/_base.scss */
+/* line 51, ../sass/global/_base.scss */
 h5 {
   font-size: 0.875em;
   line-height: 1.28571em;
@@ -357,9 +362,10 @@ h5 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 50, ../sass/global/_base.scss */
+/* line 57, ../sass/global/_base.scss */
 h6 {
   font-size: 0.75em;
   line-height: 1.5em;
@@ -371,51 +377,145 @@ h6 {
   text-transform: uppercase;
 }
 
-/* line 60, ../sass/global/_base.scss */
+/* line 67, ../sass/global/_base.scss */
 a {
   color: #254590;
   text-decoration: none;
 }
-/* line 24, ../../../../../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:hover {
   color: #1b3267;
 }
-/* line 4, ../../../../../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 69, ../sass/global/_base.scss */
+/* line 76, ../sass/global/_base.scss */
 p {
   margin: 0 0 0.75em;
 }
 
-/* line 76, ../sass/global/_base.scss */
+/* line 80, ../sass/global/_base.scss */
+blockquote {
+  margin: 0.75em 0 0.75em 3em;
+  font-style: italic;
+}
+
+/* line 89, ../sass/global/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 84, ../sass/global/_base.scss */
+/* line 98, ../sass/global/_base.scss */
 dl {
   margin-bottom: 1.125em;
 }
 
-/* line 88, ../sass/global/_base.scss */
+/* line 102, ../sass/global/_base.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 92, ../sass/global/_base.scss */
+/* line 106, ../sass/global/_base.scss */
 dd {
   margin-left: 24px;
 }
 
-/* line 99, ../sass/global/_base.scss */
+/* line 113, ../sass/global/_base.scss */
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  -webkit-box-shadow: 0 0 5px #999999;
+  -moz-box-shadow: 0 0 5px #999999;
+  box-shadow: 0 0 5px #999999;
+}
+
+/* line 121, ../sass/global/_base.scss */
+label {
+  font-size: 0.875em;
+  line-height: 1.28571em;
+  display: block;
+  margin-bottom: 0.42857em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+/* line 129, ../sass/global/_base.scss */
+label.option {
+  display: inline;
+  font-weight: normal;
+}
+
+/* line 152, ../sass/global/_base.scss */
+textarea,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0.0625em;
+  padding: 0.125em;
+  padding: 0.1875em;
+  margin-bottom: 0.375em;
+  max-width: 100%;
+  background-color: white;
+  border-color: #999999;
+  color: #333333;
+}
+/* line 163, ../sass/global/_base.scss */
+textarea:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus {
+  border-color: #999999;
+}
+
+/* line 168, ../sass/global/_base.scss */
+input[type="file"] {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 178, ../sass/global/_base.scss */
+select {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 0.42857em;
+}
+
+/* line 187, ../sass/global/_base.scss */
 .clearfix {
   *zoom: 1;
 }
-/* line 22, ../../../../../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .clearfix:after {
   content: "\0020";
   display: block;
@@ -425,7 +525,7 @@ dd {
   visibility: hidden;
 }
 
-/* line 103, ../sass/global/_base.scss */
+/* line 191, ../sass/global/_base.scss */
 .intro {
   font-size: 1.75em;
   line-height: 1.28571em;
@@ -437,9 +537,9 @@ dd {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-shadow: rgba(104, 112, 126, 0.6) 0 1px 3px;
-  -moz-box-shadow: rgba(104, 112, 126, 0.6) 0 1px 3px;
-  box-shadow: rgba(104, 112, 126, 0.6) 0 1px 3px;
+  -webkit-box-shadow: rgba(102, 102, 102, 0.6) 0 1px 3px;
+  -moz-box-shadow: rgba(102, 102, 102, 0.6) 0 1px 3px;
+  box-shadow: rgba(102, 102, 102, 0.6) 0 1px 3px;
   padding: 4px;
   background-color: white;
 }
@@ -479,7 +579,7 @@ th,
 td {
   padding: 8px;
   vertical-align: top;
-  border-top: 1px solid #c3c7cc;
+  border-top: 1px solid #b3b3b3;
 }
 
 /* line 45, ../sass/global/_tables.scss */
@@ -494,7 +594,7 @@ thead:first-child tr:first-child td {
 
 /* line 50, ../sass/global/_tables.scss */
 tbody + tbody {
-  border-top: 2px solid #c3c7cc;
+  border-top: 2px solid #b3b3b3;
 }
 
 /* line 59, ../sass/global/_tables.scss */
@@ -505,7 +605,7 @@ tbody + tbody {
 
 /* line 67, ../sass/global/_tables.scss */
 tr.odd {
-  background-color: #f0f1f2;
+  background-color: #f0f0f0;
 }
 
 /* line 68, ../sass/global/_tables.scss */
