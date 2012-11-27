@@ -32,6 +32,33 @@
 }
 
 
+// AUTOCOMPLETE
+// Adjust the background position to account for the larger input size.
+html.js input.form-autocomplete {
+  background-position: 100% 6px;
+
+  &.throbbing {
+    background-position: 100% -14px;
+  }
+}
+
+
+// CHECKBOXES & RADIOS
+// Since these are groups of related form-items, we reduce the spacing a bit.
+.form-type-checkboxes .form-type-checkbox,
+.form-type-radios .form-type-radio {
+  margin: rhythm(1) 0;
+}
+
+
+// ERRORS
+input.error,
+textarea.error,
+select.error {
+  border: 2px solid red;
+}
+
+
 // MACHINE NAMES
 .machine-name-label {
   font-family: $ff-sans;
@@ -44,25 +71,6 @@
 }
 
 
-// CHECKBOXES & RADIOS
-// Since these are groups of related form-items, we reduce the spacing a bit.
-.form-type-checkboxes .form-type-checkbox,
-.form-type-radios .form-type-radio {
-  margin: rhythm(1) 0;
-}
-
-
-// AUTOCOMPLETE
-// Adjust the background position to account for the larger input size.
-html.js input.form-autocomplete {
-  background-position: 100% 6px;
-
-  &.throbbing {
-    background-position: 100% -14px;
-  }
-}
-
-
 // REQUIRED
 .form-required,
 .marker {
@@ -71,9 +79,21 @@ html.js input.form-autocomplete {
 }
 
 
-// ERRORS
-input.error,
-textarea.error,
-select.error {
-  border: 2px solid red;
+// VERTICAL TABS
+// These are based on the FAPI vertical tab markup which is different than the
+//  nav component.  @todo See if consolidating these is feasible.
+
+
+.vertical-tab-button {
+  position: relative;
+  font-family: $ff-sans;
 }
+
+// Setting the active tab by id assumes only one set of vertical tabs per page.
+// @todo Change #active-vertical-tab to .active-vertical-tab
+#active-vertical-tab {
+  // Removes the ackward box outline on :focus
+  top: 0;
+}
+
+

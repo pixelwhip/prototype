@@ -720,45 +720,56 @@ select {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 36, ../sass/global/_forms.scss */
-.machine-name-label {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+/* line 37, ../sass/global/_forms.scss */
+html.js input.form-autocomplete {
+  background-position: 100% 6px;
+}
+/* line 40, ../sass/global/_forms.scss */
+html.js input.form-autocomplete.throbbing {
+  background-position: 100% -14px;
 }
 
-/* line 41, ../sass/global/_forms.scss */
-.machine-name-value {
-  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New", Courier, monospace;
-  margin: 0 .5em;
-}
-
-/* line 50, ../sass/global/_forms.scss */
+/* line 49, ../sass/global/_forms.scss */
 .form-type-checkboxes .form-type-checkbox,
 .form-type-radios .form-type-radio {
   margin: 0.375em 0;
 }
 
 /* line 57, ../sass/global/_forms.scss */
-html.js input.form-autocomplete {
-  background-position: 100% 6px;
+input.error,
+textarea.error,
+select.error {
+  border: 2px solid red;
 }
-/* line 60, ../sass/global/_forms.scss */
-html.js input.form-autocomplete.throbbing {
-  background-position: 100% -14px;
+
+/* line 63, ../sass/global/_forms.scss */
+.machine-name-label {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 
 /* line 68, ../sass/global/_forms.scss */
+.machine-name-value {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New", Courier, monospace;
+  margin: 0 .5em;
+}
+
+/* line 76, ../sass/global/_forms.scss */
 .form-required,
 .marker {
   color: #b52828;
   font-weight: bold;
 }
 
-/* line 77, ../sass/global/_forms.scss */
-input.error,
-textarea.error,
-select.error {
-  border: 2px solid red;
+/* line 87, ../sass/global/_forms.scss */
+.vertical-tab-button {
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 94, ../sass/global/_forms.scss */
+#active-vertical-tab {
+  top: 0;
 }
 
 /* line 13, ../sass/global/_tables.scss */
