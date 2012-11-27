@@ -81,9 +81,9 @@ select.error {
 
 // VERTICAL TABS
 // These are based on the FAPI vertical tab markup which is different than the
-//  nav component.  @todo See if consolidating these is feasible.
-
-
+//  nav component.
+// @todo See if consolidating these is feasible.
+// @todo Consolidate these styles with core's vertical-tabs.css
 .vertical-tab-button {
   position: relative;
   font-family: $ff-sans;
@@ -95,5 +95,3 @@ select.error {
   // Removes the ackward box outline on :focus
   top: 0;
 }
-
-
