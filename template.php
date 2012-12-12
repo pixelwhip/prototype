@@ -36,7 +36,7 @@ function prototype_preprocess_menu_link(&$vars) {
  */
 function prototype_preprocess_field(&$vars) {
   /* Set shortcut variables. Hooray for less typing! */
-  $field = $vars['element']['#field_name'];
+  $name = $vars['element']['#field_name'];
   $bundle = $vars['element']['#bundle'];
   $mode = $vars['element']['#view_mode'];
   $classes = &$vars['classes_array'];
@@ -45,18 +45,21 @@ function prototype_preprocess_field(&$vars) {
   $item_classes = array();
 
   /* Global field styles */
-  $classes[] = 'field-wrapper';
-  $title_classes[] = 'field-label';
-  $content_classes[] = 'field-items';
-  $item_classes[] = 'field-item';
+  $classes = array(
+    'field',
+    'field--' . str_replace('_', '-', $name),
+  );
+  $title_classes = array('field-label');
+  $content_classes = array('field-items');
+  $item_classes = array('field-item');
 
   /* Uncomment the lines below to see variables you can use to target a field */
-  // print '<strong>Field:</strong> ' . $field . '<br/>';
+  // print '<strong>Name:</strong> ' . $name . '<br/>';
   // print '<strong>Bundle:</strong> ' . $bundle  . '<br/>';
   // print '<strong>Mode:</strong> ' . $mode .'<br/>';
 
   /* Example: Using an alternative theme function */
-  // if($field == 'field_tags') {
+  // if($name == 'field_tags') {
   //   $vars['theme_hook_suggestions'][] = 'field__custom_separated';
   // }
 
