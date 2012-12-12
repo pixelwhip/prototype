@@ -53,6 +53,11 @@ function prototype_preprocess_field(&$vars) {
   $content_classes = array('field-items');
   $item_classes = array('field-item');
 
+  /* Handle inline label classes */
+  if (!$vars['label_hidden'] && $vars['element']['#label_display'] == 'inline') {
+    $classes[] = 'field--inline-label';
+  }
+
   /* Uncomment the lines below to see variables you can use to target a field */
   // print '<strong>Name:</strong> ' . $name . '<br/>';
   // print '<strong>Bundle:</strong> ' . $bundle  . '<br/>';
