@@ -9,7 +9,7 @@
 // Mixins for creating simple grids of elements
 
 @mixin nup-container {
-  @include centerfix;
+  @include clearfix;
 }
 
 @mixin nup-base($gutter: $w-gutter-half) {
