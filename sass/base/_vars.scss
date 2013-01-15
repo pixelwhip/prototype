@@ -72,14 +72,16 @@ $clr-neutral:       $gray-light;      // Default nuetral color
 $clr-text:          $gray-darker;     // Default body copy color
 $clr-link:          $blue-darker;     // Default link color
 $clr-accent:        $orange-dark;     // Default accent color
+
 $clr-border:        $gray-lighter;    // Default border and required color
-$clr-status:        $green-dark;           // Default status color
+
+$clr-status:        $green-dark;      // Default status color
 $clr-warning:       $orange;          // Default warning color
 $clr-error:         $red;             // Default error and required color
 
-$color-table-border: $gray-light;
-$color-table-odd: $gray-white;
-$color-table-even: transparent;
+$clr-table-border:  $gray-light;      // Default table border color
+$clr-table-odd:     $gray-white;      // Default table odd row color
+$clr-table-even:    transparent;      // Default table even row color
 
 
 //  Typography

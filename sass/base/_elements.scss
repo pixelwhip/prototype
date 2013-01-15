@@ -6,6 +6,7 @@
 // for use within the WYSIWYG editor.
 // ----------------------------------------------------------------------------
 
+
 // Establish Vertical rhythm.
 * html {
   font-size: 100% * $base-font-size / $browser-default-font-size;
@@ -20,6 +21,7 @@ html {
 body {
   color: $clr-text;
 }
+
 
 // Headings
 //-----------------------------------------------------------------------------
@@ -60,6 +62,7 @@ h6 {
   letter-spacing: .03em;
   text-transform: uppercase;
 }
+
 
 // Links
 //-----------------------------------------------------------------------------
@@ -180,8 +183,10 @@ select {
   margin-bottom: rhythm(1, $fs-s);
 }
 
+
 // Tables
 // ----------------------------------------------------------------------------
+
 table {
   max-width: 100%;
   width: 100%;
@@ -202,7 +207,7 @@ th,
 td {
   padding: 8px;
   vertical-align: top;
-  border-top: 1px solid $color-table-border;
+  border-top: 1px solid $clr-table-border;
 }
 
 // Remove top border from thead by default
@@ -217,11 +222,12 @@ thead:first-child tr:first-child td {
 
 // Account for multiple tbody instances
 tbody + tbody {
-  border-top: 2px solid $color-table-border;
+  border-top: 2px solid $clr-table-border;
 }
 
-tr.odd  { background-color: $color-table-odd; }
-tr.even { background-color: $color-table-even; }
+tr.odd  { background-color: $clr-table-odd; }
+tr.even { background-color: $clr-table-even; }
+
 
 // Utility classes
 //-----------------------------------------------------------------------------
