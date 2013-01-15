@@ -1,24 +1,25 @@
 // This needs to come above the compass plugins.
-@import "partials/vars";
+@import "base/vars";
 
-//  Compass
-@import "compass/support";
-@import "compass/css3";
-@import "compass/typography";
+// Compass.
+@import "compass";
 
-// Frameworks
+// Compass plugins.
 @import "breakpoint";
 @import "zen";
 
-//  Partials - Variables, functions and mixins specific to SASS
+// Utilities.
 @import "icon/*.png";     // Compass sprite support
-@import "partials/blend-mode";
-@import "partials/functions";
-@import "partials/mixins";
-@import "partials/extends";
+@import "utilities/blend-mode";
+@import "utilities/calc";
+@import "utilities/clearfix";
+@import "utilities/nup";
+@import "utilities/speech-bubble";
 
-//  Global - Generalized global styles
-@import "global/normalize";
-@import "global/base";
-@import "global/images";
-@import "global/tables";
+// Base - Generalized global styles.
+@import "base/normalize";
+@import "base/elements";
+
+// Components - Styles specific to components.
+@import "components/image";
+@import "components/table";

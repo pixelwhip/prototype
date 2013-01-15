@@ -1,56 +1,56 @@
 // This needs to come above the compass plugins.
-@import "partials/vars";
+@import "base/vars";
 
-//  Compass
-@import "compass/support";
-@import "compass/css3";
-@import "compass/typography";
+// Compass.
+@import "compass";
 
-// Frameworks
+// Compass plugins.
 @import "breakpoint";
 @import "zen";
 
-//  Partials - Variables, functions and mixins specific to SASS
+// Utilities.
 @import "icon/*.png";     // Compass sprite support
-@import "partials/blend-mode";
-@import "partials/functions";
-@import "partials/mixins";
-@import "partials/extends";
-@import "partials/buttons";
-@import "partials/utilities";
+@import "utilities/blend-mode";
+@import "utilities/calc";
+@import "utilities/clearfix";
+@import "utilities/nup";
+@import "utilities/speech-bubble";
+@import "utilities/button";
 
-//  Global - Generalized global styles
-@import "global/normalize";
-@import "global/base";
-@import "global/images";
-@import "global/forms";
-@import "global/tables";
-@import "global/layout";
+// Base - Generalized global styles.
+@import "base/normalize";
+@import "base/elements";
 
-//  Libraries - Modified 3rd party CSS
+// Layouts - Styles specific to page layout.
+@import "layout/page";
+@import "layout/region--above-content";
+@import "layout/region--footer";
+@import "layout/region--header";
+@import "layout/region--main";
+@import "layout/region--messages";
+
+// Libraries - Modified 3rd party CSS.
 @import "libraries/flexslider";
 
-//  Elements - Styles specific to elements
-@import "elements/buttons";
-@import "elements/fields";
-@import "elements/headings";
-@import "elements/lists";
-@import "elements/meta";
-@import "elements/navigation";
-
-//  Components - Styles specific to components
-@import "components/above-content";
-@import "components/blocks";
-@import "components/comments";
-@import "components/footer";
-@import "components/header";
-@import "components/main";
+// Components - Styles specific to components.
+@import "components/block";
+@import "components/comment";
+@import "components/field";
+@import "components/form";
+@import "components/heading";
+@import "components/image";
+@import "components/link";
+@import "components/list";
 @import "components/marquee";
-@import "components/messages";
-@import "components/modes";
+@import "components/message";
+@import "components/meta";
+@import "components/mode";
+@import "components/nav";
 @import "components/pager";
 @import "components/password";
 @import "components/search";
-@import "components/styleguide";
-@import "components/types";
-@import "components/views";
+@import "components/table";
+@import "components/view";
+
+// Browser - browser specific CSS.
+@import "browsers/lte-9";

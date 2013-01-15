@@ -1,0 +1,7 @@
+// Primary buttons
+.link--primary {
+  @extend %button;
+  @extend %button--medium;
+  @extend %button--primary;
+  margin-bottom: rhythm(1);
+}

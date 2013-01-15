@@ -77,6 +77,10 @@ $clr-status:        $green-dark;           // Default status color
 $clr-warning:       $orange;          // Default warning color
 $clr-error:         $red;             // Default error and required color
 
+$color-table-border: $gray-light;
+$color-table-odd: $gray-white;
+$color-table-even: transparent;
+
 
 //  Typography
 //-----------------------------------------------------------------------------
