@@ -1,10 +1,8 @@
-
-
 // Individual messages
 .messages {
-	@include border-radius(4px);
-	margin-bottom: rhythm(1);
-	padding: rhythm(1) $w-gutter-half;
+  @include border-radius(4px);
+  margin-bottom: rhythm(1);
+  padding: rhythm(1) $w-gutter-half;
   color: $white;
 
   a {
@@ -16,4 +14,11 @@
   &.error    { background-color: $clr-error; }
   &.warning  { background-color: $clr-warning; }
   &.status   { background-color: $clr-status; }
+}
+
+.krumo-element,
+.krumo-footnote,
+.krumo-call,
+.krumo-preview {
+  color: $black;
 }
