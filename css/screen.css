@@ -179,7 +179,7 @@ code,
 kbd,
 samp {
   font-family: monospace, serif;
-  _font-family: "courier new", monospace;
+  _font-family: 'courier new', monospace;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -968,7 +968,7 @@ select.error {
 
 .machine-name-value {
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New", Courier, monospace;
-  margin: 0 0.5em;
+  margin: 0 .5em;
 }
 
 .form-required,
@@ -1138,7 +1138,7 @@ select.error {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .nav-tabs > li {
@@ -1173,7 +1173,7 @@ select.error {
 .nav-tabs > .active > a:hover {
   color: #333333;
   background-color: #dbdbdb;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
 }
