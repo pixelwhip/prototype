@@ -70,7 +70,6 @@ audio:not([controls]) {
 //
 
 html,
-button,
 input,
 select,
 textarea {
@@ -367,7 +366,7 @@ textarea {
     margin: 0; // 2
     vertical-align: baseline; // 3
     @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-       //vertical-align: middle; // 3
+       vertical-align: middle; // 3
     }
 }
 
@@ -394,7 +393,7 @@ input[type="submit"] {
     cursor: pointer; // 1//
     -webkit-appearance: button; // 2//
     @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-       //overflow: visible;  // 3//
+       overflow: visible;  // 3//
     }
 }
 

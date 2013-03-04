@@ -172,10 +172,11 @@ input[type="file"] {
   font-family: $ff-sans;
 }
 
-input[type="submit"] {
-  @extend %button;
-  @extend %button--small;
-  @extend %button--primary;
+input[type="submit"],
+button {
+  @include button;
+  @include button--medium;
+  @include button--primary;
 }
 
 select {

@@ -170,3 +170,15 @@ $default-text-shadow-v-offset: 1px;
 $radius-s: .25em;
 $radius-m: .5em;
 $radius-l: 50%;
+
+
+//  Button settings
+//-----------------------------------------------------------------------------
+
+$clr-btn--primary:   $clr-accent;
+$clr-btn--secondary: $gray-darker;
+$clr-btn--tertiary:  $gray-lighter;
+
+$btn-style: 'none';
+$btn-highlight-strength: .5;
+$btn-shadow-strength: .5;
