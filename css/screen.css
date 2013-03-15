@@ -277,6 +277,19 @@ body {
   color: #333333;
 }
 
+div,
+section,
+header,
+footer,
+aside,
+figure {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *box-sizing: content-box;
+  *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
+}
+
 h1 {
   font-size: 2.1875em;
   line-height: 1.2em;
@@ -584,7 +597,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -601,7 +614,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -622,7 +635,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -639,7 +652,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -665,7 +678,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -682,7 +695,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -703,7 +716,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -720,7 +733,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;

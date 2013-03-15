@@ -22,6 +22,16 @@ body {
   color: $clr-text;
 }
 
+// Use border-box by default on elements typically used for layout.
+div,
+section,
+header,
+footer,
+aside,
+figure {
+  @include border-box;
+}
+
 
 // Headings
 //-----------------------------------------------------------------------------
