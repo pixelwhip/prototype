@@ -471,11 +471,10 @@ button {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
+  padding: 0.14286em 13px;
   font-size: 1em;
   line-height: 1.5em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 0.14286em 13px;
-  background-color: #e55c16;
+  background-color: #999999;
 }
 input[type="submit"]:hover,
 button:hover {
@@ -813,7 +812,7 @@ tr.even {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-  background-color: #333333;
+  background-color: #666666;
   font-size: 0.875em;
   line-height: 1.28571em;
   display: block;
@@ -859,24 +858,23 @@ div.styleguide {
 
 .read-more,
 .node-link a {
+  padding: 0.25em 10px;
   font-size: 0.75em;
   line-height: 1.5em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 0.25em 10px;
 }
 .read-more:after,
 .node-link a:after {
+  top: -1px;
+  content: '';
+  position: relative;
+  width: 18px;
+  height: 18px;
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-  content: '';
-  position: relative;
-  width: 18px;
-  height: 18px;
-  top: -1px;
 }
 .read-more:after,
 .node-link a:after {
@@ -1000,18 +998,17 @@ select.error {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
+  padding: 0.14286em 13px;
   font-size: 1em;
   line-height: 1.5em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 0.14286em 13px;
-  background-color: #e55c16;
+  background-color: #999999;
 }
 .link--button:hover {
   text-decoration: none;
 }
 
 .button--secondary {
-  background-color: #333333;
+  background-color: #666666;
 }
 
 .article-list {

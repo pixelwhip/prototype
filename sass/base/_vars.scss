@@ -3,20 +3,16 @@
 // Variables for use throughout this compass project.
 //-----------------------------------------------------------------------------
 
-
 // IE Support
 //-----------------------------------------------------------------------------
-
 // Setting this to false will result in smaller output, but no support for ie6 hacks.
 // $legacy-support-for-ie6: true; // Overrides default set in Support partial.
 
 // Setting this to false will result in smaller output, but no support for ie7 hacks.
 $legacy-support-for-ie7: true; // Overrides default set in Support partial.
 
-
-//  Colors
+//  Color.
 //-----------------------------------------------------------------------------
-
 $white:             #ffffff;
 $black:             #000000;
 
@@ -66,37 +62,34 @@ $royal-darker:       #254590;
 $royal-darkest:      #0f2840;
 $royal-black:        #091827;
 
-// Semantic color variables.
+// Semantic color.
+//----------------------------------------------------------------------------
+$clr-neutral:      $gray-light;      // Default nuetral color
+$clr-text:         $gray-darker;     // Default body copy color
+$clr-link:         $blue-darker;     // Default link color
+$clr-accent:       $orange-dark;     // Default accent color
+$clr-border:       $gray-lighter;    // Default border and required color
+$clr-status:       $green-dark;      // Default status color
+$clr-warning:      $orange;          // Default warning color
+$clr-error:        $red;             // Default error and required color
+$clr-table-border: $gray-light;      // Default table border color
+$clr-table-odd:    $gray-white;      // Default table odd row color
+$clr-table-even:   transparent;      // Default table even row color
 
-$clr-neutral:       $gray-light;      // Default nuetral color
-$clr-text:          $gray-darker;     // Default body copy color
-$clr-link:          $blue-darker;     // Default link color
-$clr-accent:        $orange-dark;     // Default accent color
+// Typefaces.
+//----------------------------------------------------------------------------
+$ff-mono:  Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New", Courier, monospace;;
+$ff-sans:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ff-serif: Georgia, serif;
 
-$clr-border:        $gray-lighter;    // Default border and required color
+// Semantic fonts.
+//----------------------------------------------------------------------------
+$ff-body:    "Droid Serif", $ff-serif;
+$ff-heading: "Open Sans", $ff-sans;
+$ff-display: $ff-heading;
 
-$clr-status:        $green-dark;      // Default status color
-$clr-warning:       $orange;          // Default warning color
-$clr-error:         $red;             // Default error and required color
-
-$clr-table-border:  $gray-light;      // Default table border color
-$clr-table-odd:     $gray-white;      // Default table odd row color
-$clr-table-even:    transparent;      // Default table even row color
-
-
-//  Typography
-//-----------------------------------------------------------------------------
-
-//  Typefaces
-$ff-mono:     Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New", Courier, monospace;;
-$ff-sans:     "Helvetica Neue", Helvetica, Arial, sans-serif;
-$ff-serif:    Georgia, serif;
-
-$ff-body:     "Droid Serif", $ff-serif;
-$ff-heading:  "Open Sans", $ff-sans;
-$ff-display:  $ff-heading;
-
-//  Font sizes
+// Font size.
+//----------------------------------------------------------------------------
 $fs-xxs:     12px;
 $fs-xs:      13px;
 $fs-s:       14px;
@@ -108,6 +101,8 @@ $fs-xxxl:    32px;
 $fs-xxxxl:   35px;
 $fs-xxxxxl:  40px;
 
+// Semantic font size.
+//----------------------------------------------------------------------------
 $fs-h1: $fs-xxxxl !default;
 $fs-h2: $fs-xxxl !default;
 $fs-h3: $fs-xl !default;
@@ -115,39 +110,26 @@ $fs-h4: $fs-m !default;
 $fs-h5: $fs-s !default;
 $fs-h6: $fs-xxs !default;
 
-// The amount lists and blockquotes are indented.
+// Indentation.
+//----------------------------------------------------------------------------
 $indent-amount: 3em !default;
 
-// Vertical Ryhthm
+// Vertical rhythm.
+//----------------------------------------------------------------------------
 $base-font-size:    $fs-m;       // Font-size of your body copy.
 $base-line-height:  6px;         // Setting the base-line-height half.
                                  // the height of the desired body copy.
                                  // line-height helps prevent sparse.
                                  // leading at different font-sizes.
 
-
-// Zen Grids
-//-----------------------------------------------------------------------------
-
+// Layout
+//----------------------------------------------------------------------------
+// Grid.
 $zen-column-count: 12;
 $zen-gutter-width: 24px;
 $box-sizing-polyfill-path: "/sites/all/themes/prototype/polyfills/boxsizing.htc";
 
-
-//  Layout
-//-----------------------------------------------------------------------------
-
-$w-full: 1104px;
-$w-content: 620px;
-$w-sidebar: 320px;
-$w-sidebar-first: 320px;
-$w-gutter: $zen-gutter-width;
-$w-gutter-half: $zen-gutter-width / 2;
-
-
-//  Breakpoints
-//-----------------------------------------------------------------------------
-
+// Breakpoint.
 $mobile: 480px;
 $mobile-wide: 600px;
 $tablet: 768px;
@@ -155,30 +137,35 @@ $tablet-wide: 992px;
 $desktop: 1080px;
 $desktop-wide: 1382px;
 
+// Width.
+$w-full: 1104px;
+$w-content: 620px;
+$w-sidebar: 320px;
+$w-sidebar-first: 320px;
+$w-gutter: $zen-gutter-width;
+$w-gutter-half: $zen-gutter-width / 2;
 
-//  CSS3
-//-----------------------------------------------------------------------------
-
+// Transition.
+//----------------------------------------------------------------------------
 $default-transition-duration: .15s;
 
-// Text shadow defaults
+// Text shadow.
+//----------------------------------------------------------------------------
 $default-text-shadow-color: rgba($gray-dark, .6);
 $default-text-shadow-blur: 1px;
 $default-text-shadow-v-offset: 1px;
 
-// Border Radius
+// Border radius.
+//----------------------------------------------------------------------------
 $radius-s: .25em;
 $radius-m: .5em;
 $radius-l: 50%;
 
-
-//  Button settings
-//-----------------------------------------------------------------------------
-
-$clr-btn--primary:   $clr-accent;
-$clr-btn--secondary: $gray-darker;
-$clr-btn--tertiary:  $gray-lighter;
-
+// Button settings.
+//----------------------------------------------------------------------------
+$clr-btn--primary:   $gray;
+$clr-btn--secondary: $gray-dark;
+$clr-btn--tertiary:  $gray-light;
 $btn-style: 'none';
 $btn-highlight-strength: .5;
 $btn-shadow-strength: .5;

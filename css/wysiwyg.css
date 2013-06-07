@@ -470,11 +470,10 @@ button {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
+  padding: 0.14286em 13px;
   font-size: 1em;
   line-height: 1.5em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 0.14286em 13px;
-  background-color: #e55c16;
+  background-color: #999999;
 }
 input[type="submit"]:hover,
 button:hover {
