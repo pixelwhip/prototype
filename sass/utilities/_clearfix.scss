@@ -1,3 +1,7 @@
+//
+// @file
+// A clearfix mixin.
+// ---------------------------------------------------------------------------
 @mixin clearfix {
   *zoom: 1;
   &:before, &:after {
@@ -11,4 +15,3 @@
 .clearfix {
   @include clearfix;
 }
-

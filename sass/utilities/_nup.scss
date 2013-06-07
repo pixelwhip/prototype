@@ -1,13 +1,7 @@
 //
 // @file
-// Reusable mixins
-//
+// Mixins for creating simple grids of elements.
 // ----------------------------------------------------------------------------
-
-
-// N-up
-// Mixins for creating simple grids of elements
-
 @mixin nup-container {
   @include clearfix;
 }
