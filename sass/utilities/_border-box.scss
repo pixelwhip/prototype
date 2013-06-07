@@ -1,11 +1,11 @@
+//
 // @file
 // Border box mixin.
-// ----------------------------------------------------------------------------
-
+// ---------------------------------------------------------------------------
 @mixin border-box {
   @include box-sizing(border-box);
 
-  // Courtesy of Zen Grids. modified a bit
+  // Courtesy of Zen Grids. Modified a bit.
   @if ($legacy-support-for-ie7) {
     @if $box-sizing-polyfill-path == "" {
       @warn "IE legacy support is on, but the $box-sizing-polyfill-path is empty.";

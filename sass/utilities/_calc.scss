@@ -1,8 +1,7 @@
 //
 // @file
-// Helper functions
-// ----------------------------------------------------------------------------
-
+// Helper functions for doing math.
+// ---------------------------------------------------------------------------
 @function calc-percent($target, $container) {
   @return ($target / $container) * 100%;
 }

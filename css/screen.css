@@ -1,6 +1,6 @@
 .icon-sprite, .read-more:after,
 .node-link a:after {
-  background: url('../images/icon-s419a39d16a.png') no-repeat;
+  background: url('../img/icon-s419a39d16a.png') no-repeat;
 }
 
 .clearfix {
@@ -287,7 +287,7 @@ figure {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   *box-sizing: content-box;
-  *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
+  *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
 }
 
 h1 {
@@ -429,9 +429,9 @@ input[type="week"] {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   border-style: solid;
   border-width: 0.0625em;
   padding: 0.125em;
@@ -585,7 +585,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -602,7 +602,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -623,7 +623,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -640,7 +640,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -666,7 +666,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -683,7 +683,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -704,7 +704,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -721,7 +721,7 @@ tr.even {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/sites/all/themes/prototype/boxsizing.htc");
+    *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
