@@ -1365,6 +1365,7 @@ select.error {
   list-style: none;
 }
 
+.pager-current,
 .pager-first,
 .pager-previous,
 .pager-item,
@@ -1377,31 +1378,23 @@ select.error {
   zoom: 1;
   *display: inline;
 }
+.pager-current > span,
+.pager-current > a,
+.pager-first > span,
 .pager-first > a,
+.pager-previous > span,
 .pager-previous > a,
+.pager-item > span,
 .pager-item > a,
+.pager-next > span,
 .pager-next > a,
+.pager-last > span,
 .pager-last > a {
+  color: #666666;
+  padding: 2px;
+  margin: 0.46154em 2px;
   font-size: 0.8125em;
   line-height: 1.38462em;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  color: #666666;
-  background-color: #dbdbdb;
-  padding: 2px 8px;
-  margin: 0.46154em 2px;
-}
-.pager-first > a:hover,
-.pager-previous > a:hover,
-.pager-item > a:hover,
-.pager-next > a:hover,
-.pager-last > a:hover {
-  color: white;
-  background-color: #666666;
-  text-decoration: none;
 }
 
 .pager-ellipsis {
@@ -1411,26 +1404,6 @@ select.error {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-}
-
-.pager-current {
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  font-size: 0.8125em;
-  line-height: 1.38462em;
-  color: white;
-  background-color: #b3b3b3;
-  padding: 0 8px;
-  margin: 0.46154em 2px;
 }
 
 .password-strength, div.password-confirm {
