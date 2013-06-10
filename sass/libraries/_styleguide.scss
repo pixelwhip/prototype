@@ -34,7 +34,7 @@
 
   a {
     @include button;
-    @include button--white;
+    @include button--secondary;
     @include adjust-font-size-to($fs-s);
     display: block;
     padding: 2px $w-gutter-half;
