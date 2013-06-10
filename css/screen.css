@@ -849,6 +849,69 @@ div.styleguide {
   border-bottom: none;
 }
 
+.block {
+  margin-bottom: 1.5em;
+}
+
+.block-title {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.75em;
+  color: #8cbc1a;
+  font-size: 1.5em;
+  line-height: 1.25em;
+}
+.block-title a {
+  color: #8cbc1a;
+}
+
+.block-content {
+  *zoom: 1;
+}
+.block-content:before, .block-content:after {
+  content: " ";
+  display: table;
+}
+.block-content:after {
+  clear: both;
+}
+
+.block--dropdown .block-title {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *box-sizing: content-box;
+  *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
+}
+.block--dropdown .block-content {
+  padding: 0;
+}
+.js .block--dropdown .block-content {
+  display: none;
+  -webkit-transition-property: bottom;
+  -moz-transition-property: bottom;
+  -o-transition-property: bottom;
+  transition-property: bottom;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
+}
+.js .block--dropdown.is-expanded .block-content {
+  display: block;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
 .field-label {
   font-size: 0.8125em;
   line-height: 1.38462em;
