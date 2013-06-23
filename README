@@ -1,0 +1,8 @@
+Prototype is a SASS and Compass based starter theme built to leverage [Center](http://drupal.org/project/center). The goal of Prototype is to provide a good forking point for custom Drupal theme development by establishing a pattern of well organized SCSS components. Responsive web design is an important consideration for any starter Drupal theme, and Prototype aligns with this.
+
+#### Requirements:
+Prototype has dependencies. For Compass plugins, this means installing the appropriate gem and including them in your config.rb.
+[Center](http://drupal.org/project/center)
+[Compass](http://compass-style.org)
+[Breakpoint](http://breakpoint-sass.com/)vfor media queries.
+[Zen Grids](http://breakpoint-sass.com/)- Prototype has very minimal layout classes, so this is easy to swap.
