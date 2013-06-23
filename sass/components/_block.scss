@@ -10,13 +10,13 @@
 }
 
 .block-title {
-  font-family: $ff-heading;
   margin-bottom: rhythm(3, $fs-xl);
-  color: $green-dark;
+  font-family: $ff-heading;
+  color: $clr-text;
   @include adjust-font-size-to($fs-xl);
 
   a {
-    color: $green-dark;
+    color: $clr-link;
   }
 }
 
@@ -32,7 +32,6 @@
     width: 100%;
     margin: 0;
     cursor: pointer;
-    @include border-box;
   }
 
   .block-content {
