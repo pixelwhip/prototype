@@ -2,10 +2,6 @@
 // @file
 // Image styles.
 // ---------------------------------------------------------------------------
-
-// Borders
-// -------
-
 .image-frame > img,
 .image-frame > a > img {
   @include box-sizing(border-box);
@@ -13,9 +9,6 @@
   padding: 4px;
   background-color: $white;
 }
-
-// Floating
-// --------
 
 .image-left {
   float: left;

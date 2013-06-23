@@ -2,9 +2,6 @@
 // @file
 // Field styles.
 // ---------------------------------------------------------------------------
-
-// Default field label
-// ---------------------------------------------------------------------------
 .field-label {
   @include adjust-font-size-to($fs-xs);
   font-weight: bold;

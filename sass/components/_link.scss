@@ -1,11 +1,12 @@
-// Primary buttons
+//
+// @file
+// Links component.
+// ---------------------------------------------------------------------------
+.link {
+}
+
 .link--button {
   @include button;
   @include button--medium;
   @include button--primary;
 }
-
-.button--secondary {
-  @include button--secondary;
-}
-

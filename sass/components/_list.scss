@@ -1,34 +1,47 @@
 //
 // @file
-// Heading and title styles.
-// ----------------------------------------------------------------------------
+// List component.
+// ---------------------------------------------------------------------------
+%list--no-bullets {
+  > .list-content {
+    margin: 0;
+    padding: 0;
 
-// Article list
-.article-list {
-  padding: 0;
-  border-bottom: 1px solid $clr-border;
-}
-
-.article-item {
-  @include leading-border(1px, 2);
-  padding-bottom: rhythm(2);
-  display: block;
-  border-color: $clr-border;
-}
-
-// Feature list
-.feature-list {
-}
-
-.feature-item {
-}
-
-// No bullets
-.no-bullets {
-  margin: 0;
-  padding: 0;
-
-  > li {
-    list-style: none;
+    > .list-item {
+      list-style: none;
+    }
   }
+}
+
+%list--inline {
+  @extend %list--no-bullets;
+
+  > .list-content {
+
+    > .list-item  {
+      margin: 0;
+      padding: 0 5px;
+      @include inline-block;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+// Base class.
+// ---------------------------------------------------------------------------
+.list {
+}
+
+.list-content {
+  @extend %list--no-bullets;
+
+  > .list-item {
+    margin-bottom: rhythm(4);
+  }
+}
+
+.list-item {
 }

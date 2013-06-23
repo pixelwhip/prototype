@@ -1041,30 +1041,16 @@ select.error {
   text-decoration: none;
 }
 
-.button--secondary {
-  background-color: #666666;
-}
-
-.article-list {
-  padding: 0;
-  border-bottom: 1px solid #c7c7c7;
-}
-
-.article-item {
-  border-top-width: 0.0625em;
-  border-top-style: solid;
-  padding-top: 0.6875em;
-  padding-bottom: 0.75em;
-  display: block;
-  border-color: #c7c7c7;
-}
-
-.no-bullets {
+.list-content > .list-content {
   margin: 0;
   padding: 0;
 }
-.no-bullets > li {
+.list-content > .list-content > .list-item {
   list-style: none;
+}
+
+.list-content > .list-item {
+  margin-bottom: 1.5em;
 }
 
 .messages {

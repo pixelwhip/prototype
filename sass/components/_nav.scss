@@ -1,6 +1,10 @@
-// BASE CLASS
-// ----------
+//
+// @file
+// View Mode specific styles.
+// ---------------------------------------------------------------------------
 
+// Nav component.
+// ---------------------------------------------------------------------------
 .nav {
   margin-left: 0;
   list-style: none;
@@ -17,10 +21,8 @@
   }
 }
 
-// TABS AND PILLS
-// -------------
-
-// Common styles
+// Tabs and pills.
+// ---------------------------------------------------------------------------
 .nav-tabs,
 .nav-pills {
   @include clearfix;
@@ -39,20 +41,18 @@
   margin-right: 4px;
 }
 
-// TABS
-// ----------------------------------------------------------------------------
-
-// Give the tabs something to sit on
+// Tabs.
+// ---------------------------------------------------------------------------
 .nav-tabs {
   border-bottom: 1px solid #ddd;
 }
 
-// Make the list-items overlay the bottom border
+// Make the list-items overlay the bottom border.
 .nav-tabs > li {
   margin-bottom: -1px;
 }
 
-// Actual tabs (as links)
+// Actual tabs (as links).
 .nav-tabs > li > a {
   @include border-top-radius(4px);
   @include leading-border(1px, .5);
@@ -67,7 +67,7 @@
   }
 }
 
-// Active state, and it's :hover to override normal :hover
+// Active state, and it's :hover to override normal :hover.
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
   color: $gray-darker;
@@ -110,11 +110,8 @@
   }
 }
 
-
-// STACKED
-// -----------
-
-// Stacked tabs and pills
+// Stacked.
+// ---------------------------------------------------------------------------
 .nav-stacked > li {
   float: none;
 }
@@ -129,10 +126,8 @@
   }
 }
 
-
-// STACKED BUTTONS
-// ---------------
-
+// Stacked buttons.
+// ---------------------------------------------------------------------------
 .nav-stacked.nav-buttons {
   @include border-radius(3px);
   border: 1px solid $gray-light;
@@ -162,9 +157,8 @@
   }
 }
 
-// BUTTON BAR
-// ----------
-
+// Button bar.
+// ---------------------------------------------------------------------------
 .nav-inline.nav-buttons {
   @include clearfix;
   @include background-image(linear-gradient(top, $gray-light $gray-dark));

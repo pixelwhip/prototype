@@ -4,12 +4,11 @@
 //
 // By default, table styles use the silent '%' syntax.
 // To use a class directly, change '%' to '.'
-// -----------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
 
 
-// BORDERED
-// --------
-
+// Bordered.
+// ---------------------------------------------------------------------------
 %table--bordered {
   border: 1px solid $clr-table-border;
   border-collapse: separate; // Done so we can round those corners!
@@ -22,7 +21,7 @@
     border-left: 1px solid $clr-table-border;
   }
 
-  // Prevent a double border
+  // Prevent a double border.
   caption + thead tr:first-child th,
   caption + tbody tr:first-child th,
   caption + tbody tr:first-child td,
@@ -35,7 +34,7 @@
     border-top: 0;
   }
 
-  // For first th or td in the first row in the first thead or tbody
+  // For first th or td in the first row in the first thead or tbody.
   thead:first-child tr:first-child th:first-child,
   tbody:first-child tr:first-child td:first-child {
     @include border-top-left-radius(4px);
@@ -46,7 +45,7 @@
     @include border-top-right-radius(4px);
   }
 
-  // For first th or td in the first row in the first thead or tbody
+  // For first th or td in the first row in the first thead or tbody.
   thead:last-child tr:last-child th:first-child,
   tbody:last-child tr:last-child td:first-child {
     @include border-bottom-left-radius(4px);
@@ -58,10 +57,8 @@
   }
 }
 
-
-// CONDENSED
-// ---------
-
+// Condensed.
+// ---------------------------------------------------------------------------
 %table--condensed {
   th,
   td {
@@ -69,10 +66,9 @@
   }
 }
 
-// STRIPED
-// -------
+// Striped.
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
-
+// ---------------------------------------------------------------------------
 %table--striped {
   tbody {
     tr:nth-child(odd) td,
@@ -82,10 +78,8 @@
   }
 }
 
-
-// BORDERLESS
-// ----------
-
+// Borderless.
+// ---------------------------------------------------------------------------
 %table--borderless {
   th,
   td {

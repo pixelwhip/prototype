@@ -6,9 +6,6 @@
 // .form-item-description, but we need to make some allowances for drupal's
 // default markup.
 // ---------------------------------------------------------------------------
-
-// Default form styles.
-// ---------------------------------------------------------------------------
 .form-item,
 .form-actions {
   margin: rhythm(4) 0;
@@ -78,7 +75,6 @@ select.error {
   color: $clr-error;
   font-weight: bold;
 }
-
 
 // Vertical tabs.
 // These are based on the FAPI vertical tab markup which is different than the
