@@ -1,4 +1,53 @@
 //
 // @file
 // Block specific styles.
-// ----------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+
+// Generic block components.
+// ---------------------------------------------------------------------------
+.block {
+  margin-bottom: rhythm(4);
+}
+
+.block-title {
+  font-family: $ff-heading;
+  margin-bottom: rhythm(3, $fs-xl);
+  color: $green-dark;
+  @include adjust-font-size-to($fs-xl);
+
+  a {
+    color: $green-dark;
+  }
+}
+
+.block-content {
+  @include clearfix;
+}
+
+// Block dropdown.
+// ---------------------------------------------------------------------------
+.block--dropdown {
+  .block-title {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    @include border-box;
+  }
+
+  .block-content {
+    padding: 0;
+  }
+
+  .js & .block-content {
+    display: none;
+    @include transition-property(bottom);
+    @include transition-duration(.5s);
+    @include single-transition;
+  }
+
+  .js &.is-expanded .block-content {
+    display: block;
+    @include single-transition;
+  }
+}
