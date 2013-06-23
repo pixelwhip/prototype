@@ -5,7 +5,10 @@
 // Ideally we would be sticking to .form-item, .form-item-label and
 // .form-item-description, but we need to make some allowances for drupal's
 // default markup.
-// ----------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+
+// Default form styles.
+// ---------------------------------------------------------------------------
 .form-item,
 .form-actions {
   margin: rhythm(4) 0;
@@ -16,8 +19,8 @@
   font-family: $ff-sans;
 }
 
-
-// FIELDSETS
+// Fieldsets.
+// ---------------------------------------------------------------------------
 .fieldset-legend {
   font-family: $ff-sans;
   font-weight: bold;
@@ -29,9 +32,9 @@
   font-family: $ff-sans;
 }
 
-
-// AUTOCOMPLETE
+// Autocomplete.
 // Adjust the background position to account for the larger input size.
+// ---------------------------------------------------------------------------
 html.js input.form-autocomplete {
   background-position: 100% 6px;
 
@@ -40,24 +43,24 @@ html.js input.form-autocomplete {
   }
 }
 
-
-// CHECKBOXES & RADIOS
+// Checkboxes and radios.
 // Since these are groups of related form-items, we reduce the spacing a bit.
+// ---------------------------------------------------------------------------
 .form-type-checkboxes .form-type-checkbox,
 .form-type-radios .form-type-radio {
   margin: rhythm(1) 0;
 }
 
-
-// ERRORS
+// Errors.
+// ---------------------------------------------------------------------------
 input.error,
 textarea.error,
 select.error {
   border: 2px solid red;
 }
 
-
-// MACHINE NAMES
+// Machine names.
+// ---------------------------------------------------------------------------
 .machine-name-label {
   font-family: $ff-sans;
   font-weight: bold;
@@ -68,8 +71,8 @@ select.error {
   margin: 0 .5em;
 }
 
-
-// REQUIRED
+// Required.
+// ---------------------------------------------------------------------------
 .form-required,
 .marker {
   color: $clr-error;
@@ -77,11 +80,12 @@ select.error {
 }
 
 
-// VERTICAL TABS
+// Vertical tabs.
 // These are based on the FAPI vertical tab markup which is different than the
 //  nav component.
 // @todo See if consolidating these is feasible.
 // @todo Consolidate these styles with core's vertical-tabs.css
+// ---------------------------------------------------------------------------
 .vertical-tab-button {
   position: relative;
   font-family: $ff-sans;
