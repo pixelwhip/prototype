@@ -13,10 +13,4 @@
 .read-more,
 .node-link a {
   @include button--small;
-  @include button-icon--after;
-
-  &:after {
-    @include icon-sprite(more);
-    margin-right: -4px;
-  }
 }
