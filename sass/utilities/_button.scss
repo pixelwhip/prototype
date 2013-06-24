@@ -30,7 +30,6 @@
 @mixin button--large {
   padding: rhythm(1, $fs-l) 18px;
   @include adjust-font-size-to($fs-l);
-  @include border-radius($radius-m);
 }
 
 // Button colors

@@ -163,7 +163,7 @@ input[type="text"],
 input[type="time"],
 input[type="url"],
 input[type="week"] {
-  @include border-radius(3px);
+  @include border-radius(0);
   @include box-sizing(content-box);
   @include rhythm-borders(1px, .5);
   padding: rhythm(.5);
