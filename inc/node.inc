@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Implements hook_preprocess_node()
  */
@@ -19,8 +18,8 @@ function prototype_preprocess_node(&$vars) {
 
   // Example: Adding a classes base on view mode.
   // switch ($mode) {
-  //   case 'photo_teaser':
-  //     $classes[] = 'bg-white gutters-half l-space-trailing';
+  //   case 'teaser':
+  //     $classes[] = 'l--teaser';
   //     break;
   // }
 }
