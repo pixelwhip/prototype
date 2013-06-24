@@ -1,6 +1,5 @@
 .icon-sprite {
-  background-image: url('../img/icon-s3ceea4dc11.png');
-  background-repeat: no-repeat;
+  background: url('../img/icon-s419a39d16a.png') no-repeat;
 }
 
 .clearfix {
@@ -47,7 +46,7 @@ html,
 input,
 select,
 textarea {
-  font-family: "Droid Serif", Georgia, serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -179,17 +178,17 @@ form {
 fieldset {
   border-color: #c7c7c7;
   margin: 0.75em 0;
-  border-top-width: 0.0625em;
   border-top-style: solid;
+  border-top-width: 0.0625em;
   padding-top: 0.6875em;
-  border-bottom-width: 0.0625em;
   border-bottom-style: solid;
+  border-bottom-width: 0.0625em;
   padding-bottom: 0.6875em;
-  border-left-width: 0.0625em;
   border-left-style: solid;
+  border-left-width: 0.0625em;
   padding-left: 0.6875em;
-  border-right-width: 0.0625em;
   border-right-style: solid;
+  border-right-width: 0.0625em;
   padding-right: 0.6875em;
 }
 
@@ -291,33 +290,33 @@ figure {
 }
 
 h1 {
-  font-size: 2.1875em;
-  line-height: 1.2em;
-  margin-top: 0.34286em;
+  font-size: 3em;
+  line-height: 1.125em;
+  margin-top: 0.25em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.34286em;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.25em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h2 {
-  font-size: 2em;
-  line-height: 1.125em;
-  margin-top: 0.375em;
+  font-size: 2.25em;
+  line-height: 1.16667em;
+  margin-top: 0.33333em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.375em;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.33333em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h3 {
-  font-size: 1.5em;
-  line-height: 1.25em;
-  margin-top: 0.5em;
+  font-size: 1.3125em;
+  line-height: 1.42857em;
+  margin-top: 0.57143em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.5em;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.57143em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h4 {
@@ -327,7 +326,7 @@ h4 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h5 {
@@ -337,7 +336,7 @@ h5 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h6 {
@@ -426,12 +425,14 @@ input[type="url"],
 input[type="week"] {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   border-radius: 3px;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  border-width: 0.0625em;
   border-style: solid;
+  border-width: 0.0625em;
   padding: 0.125em;
   padding: 0.1875em;
   margin-bottom: 0.375em;
@@ -469,7 +470,7 @@ button {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-  padding: 0.14286em 13px;
+  padding: 0.16667em 13px;
   font-size: 1em;
   line-height: 1.5em;
   background-color: #999999;
@@ -541,8 +542,8 @@ tr.even {
 }
 
 .intro {
-  font-size: 1.75em;
-  line-height: 1.28571em;
+  font-size: 1.5em;
+  line-height: 1.25em;
 }
 
 .image-frame > img,

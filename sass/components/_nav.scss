@@ -36,44 +36,40 @@
 .nav-tabs > li > a,
 .nav-pills > li > a {
   display: block;
-  padding-right: 12px;
-  padding-left: 12px;
-  margin-right: 4px;
+  padding-right: rhythm(2);
+  padding-left: rhythm(2);
+  // margin-right: 1px;
 }
 
 // Tabs.
 // ---------------------------------------------------------------------------
 .nav-tabs {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid $gray-dark;
+  // background-color: $gray-dark;
+  // padding: rhythm(2) rhythm(2) 0;
 }
 
 // Make the list-items overlay the bottom border.
 .nav-tabs > li {
   margin-bottom: -1px;
+  margin-left: -1px;
 }
 
 // Actual tabs (as links).
 .nav-tabs > li > a {
-  @include border-top-radius(4px);
-  @include leading-border(1px, .5);
-  @include trailing-border(1px, .5);
-  @include box-shadow($white 1px 1px 1px 0 inset);
-  border: 1px solid $gray-lightest;
-  background-color: $gray-white;
-  color: $gray;
-
+  padding: rhythm(1) rhythm(3);
+  border: 1px solid $gray-dark;
+  background-color: $gray-lighter;
   &:hover {
-    border-color: $gray-light $gray-light $white;
+    background-color: $gray-white;
   }
 }
 
-// Active state, and it's :hover to override normal :hover.
+// Active state, and its :hover to override normal :hover.
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
-  color: $gray-darker;
-  background-color: $gray-lightest;
-  border: 1px solid #ddd;
-  border-bottom-color: transparent;
+  background-color: $white;
+  border-bottom-color: $white;
   cursor: default;
 }
 

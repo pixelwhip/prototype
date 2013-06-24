@@ -78,14 +78,14 @@ $clr-table-even:   transparent;      // Default table even row color
 
 // Typefaces.
 //----------------------------------------------------------------------------
-$ff-mono:  Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New", Courier, monospace;;
+$ff-mono:  Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New", Courier, monospace;
 $ff-sans:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-$ff-serif: Georgia, serif;
+$ff-serif: Georgia, "Droid Serif", "Times New Roman", Times, serif;
 
 // Semantic fonts.
 //----------------------------------------------------------------------------
-$ff-body:    "Droid Serif", $ff-serif;
-$ff-heading: "Open Sans", $ff-sans;
+$ff-body:    $ff-sans;
+$ff-heading: $ff-sans;
 $ff-display: $ff-heading;
 
 // Font size.
@@ -94,12 +94,12 @@ $fs-xxs:     12px;
 $fs-xs:      13px;
 $fs-s:       14px;
 $fs-m:       16px;
-$fs-l:       21px;
-$fs-xl:      24px;
-$fs-xxl:     28px;
-$fs-xxxl:    32px;
-$fs-xxxxl:   35px;
-$fs-xxxxxl:  40px;
+$fs-l:       18px;
+$fs-xl:      21px;
+$fs-xxl:     24px;
+$fs-xxxl:    36px;
+$fs-xxxxl:   48px;
+$fs-xxxxxl:  60px;
 
 // Semantic font size.
 //----------------------------------------------------------------------------
