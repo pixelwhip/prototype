@@ -42,7 +42,7 @@ html,
 input,
 select,
 textarea {
-  font-family: "Droid Serif", Georgia, serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -225,9 +225,6 @@ input[disabled] {
 
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   padding: 0;
 }
 
@@ -259,6 +256,14 @@ table {
   border-spacing: 0;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *box-sizing: content-box;
+  *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
+}
+
 * html {
   font-size: 100%;
 }
@@ -272,47 +277,34 @@ body {
   color: #333333;
 }
 
-div,
-section,
-header,
-footer,
-aside,
-figure {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  *box-sizing: content-box;
-  *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
-}
-
 h1 {
-  font-size: 2.1875em;
-  line-height: 1.2em;
-  margin-top: 0.34286em;
+  font-size: 3em;
+  line-height: 1.125em;
+  margin-top: 0.25em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.34286em;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.25em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h2 {
-  font-size: 2em;
-  line-height: 1.125em;
-  margin-top: 0.375em;
+  font-size: 2.25em;
+  line-height: 1.16667em;
+  margin-top: 0.33333em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.375em;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.33333em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h3 {
-  font-size: 1.5em;
-  line-height: 1.25em;
-  margin-top: 0.5em;
+  font-size: 1.3125em;
+  line-height: 1.42857em;
+  margin-top: 0.57143em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.5em;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.57143em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h4 {
@@ -322,7 +314,7 @@ h4 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h5 {
@@ -332,7 +324,7 @@ h5 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h6 {
@@ -466,7 +458,7 @@ button {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-  padding: 0.14286em 13px;
+  padding: 0.16667em 13px;
   font-size: 1em;
   line-height: 1.5em;
   background-color: #999999;
@@ -538,15 +530,12 @@ tr.even {
 }
 
 .intro {
-  font-size: 1.75em;
-  line-height: 1.28571em;
+  font-size: 1.5em;
+  line-height: 1.25em;
 }
 
 .image-frame > img,
 .image-frame > a > img {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   -webkit-box-shadow: rgba(102, 102, 102, 0.6) 0 1px 3px;
   -moz-box-shadow: rgba(102, 102, 102, 0.6) 0 1px 3px;
   box-shadow: rgba(102, 102, 102, 0.6) 0 1px 3px;

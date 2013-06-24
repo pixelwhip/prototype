@@ -7,7 +7,6 @@
 }
 
 @mixin nup-base($gutter: $w-gutter-half) {
-  @include box-sizing(border-box);
   padding: 0 $gutter;
   float: left;
 }

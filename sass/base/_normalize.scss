@@ -415,7 +415,7 @@ input[disabled] {
 
 input[type="checkbox"],
 input[type="radio"] {
-    @include box-sizing(border-box); // 1//
+    // @include box-sizing(border-box); // 1//
     padding: 0; // 2//
     @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
        //height: 13px; // 3//
