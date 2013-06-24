@@ -230,9 +230,6 @@ input[disabled] {
 
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   padding: 0;
 }
 
@@ -264,6 +261,14 @@ table {
   border-spacing: 0;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *box-sizing: content-box;
+  *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
+}
+
 * html {
   font-size: 100%;
 }
@@ -275,19 +280,6 @@ html {
 
 body {
   color: #333333;
-}
-
-div,
-section,
-header,
-footer,
-aside,
-figure {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  *box-sizing: content-box;
-  *behavior: url("/sites/all/themes/prototype/polyfills/boxsizing.htc");
 }
 
 h1 {
@@ -547,9 +539,6 @@ tr.even {
 
 .image-frame > img,
 .image-frame > a > img {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   -webkit-box-shadow: rgba(102, 102, 102, 0.6) 0 1px 3px;
   -moz-box-shadow: rgba(102, 102, 102, 0.6) 0 1px 3px;
   box-shadow: rgba(102, 102, 102, 0.6) 0 1px 3px;
