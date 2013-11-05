@@ -11,21 +11,29 @@
   list-style: none;
 }
 
+%pager-item {
+  @include inline-block;
+}
+
+%pager-item-inner {
+  @include adjust-font-size-to($fs-xs);
+  @include border-radius(2px);
+  margin: rhythm(1, $fs-xs) 2px;
+  padding: 2px 8px;
+}
+
 // Pager links
 .pager-first,
 .pager-previous,
 .pager-item,
 .pager-next,
 .pager-last {
-  @include inline-block;
+  @extend %pager-item;
 
   > a {
-    @include adjust-font-size-to($fs-xs);
-    @include border-radius(2px);
+    @extend %pager-item-inner;
     color: $gray-dark;
     background-color: $gray-lightest;
-    padding: 2px 8px;
-    margin: rhythm(1, $fs-xs) 2px;
 
     &:hover {
       color: $white;
@@ -36,15 +44,15 @@
 }
 
 .pager-ellipsis {
-  @include inline-block;
+  @extend %pager-item;
 }
 
 .pager-current {
-  @include inline-block;
-  @include border-radius(2px);
-  @include adjust-font-size-to($fs-xs);
-  color: $white;
-  background-color: $gray-light;
-  padding: 0 8px;
-  margin: rhythm(1, $fs-xs) 2px;
+  @extend %pager-item;
+
+  > span {
+    @extend %pager-item-inner;
+    color: $white;
+    background-color: $gray-light;
+  }
 }
