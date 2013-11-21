@@ -388,15 +388,6 @@ dd {
   margin-left: 24px;
 }
 
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  -webkit-box-shadow: 0 0 5px #999999;
-  -moz-box-shadow: 0 0 5px #999999;
-  box-shadow: 0 0 5px #999999;
-}
-
 label {
   font-size: 0.875em;
   line-height: 1.28571em;
