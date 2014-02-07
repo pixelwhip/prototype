@@ -388,15 +388,6 @@ dd {
   margin-left: 24px;
 }
 
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  -webkit-box-shadow: 0 0 5px #999999;
-  -moz-box-shadow: 0 0 5px #999999;
-  box-shadow: 0 0 5px #999999;
-}
-
 label {
   font-size: 0.875em;
   line-height: 1.28571em;
@@ -1312,7 +1303,7 @@ select.error {
 .pager-previous,
 .pager-item,
 .pager-next,
-.pager-last {
+.pager-last, .pager-ellipsis, .pager-current {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
@@ -1320,11 +1311,12 @@ select.error {
   zoom: 1;
   *display: inline;
 }
+
 .pager-first > a,
 .pager-previous > a,
 .pager-item > a,
 .pager-next > a,
-.pager-last > a {
+.pager-last > a, .pager-current > span {
   font-size: 0.8125em;
   line-height: 1.38462em;
   -webkit-border-radius: 2px;
@@ -1332,10 +1324,17 @@ select.error {
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
+  margin: 0.46154em 2px;
+  padding: 2px 8px;
+}
+
+.pager-first > a,
+.pager-previous > a,
+.pager-item > a,
+.pager-next > a,
+.pager-last > a {
   color: #666666;
   background-color: #dbdbdb;
-  padding: 2px 8px;
-  margin: 0.46154em 2px;
 }
 .pager-first > a:hover,
 .pager-previous > a:hover,
@@ -1347,33 +1346,9 @@ select.error {
   text-decoration: none;
 }
 
-.pager-ellipsis {
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-}
-
-.pager-current {
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  font-size: 0.8125em;
-  line-height: 1.38462em;
+.pager-current > span {
   color: white;
   background-color: #b3b3b3;
-  padding: 0 8px;
-  margin: 0.46154em 2px;
 }
 
 .password-strength, div.password-confirm {
