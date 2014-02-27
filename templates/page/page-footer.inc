@@ -1,5 +1,5 @@
 <div id="footer">
-  <div class="l-constrained">
+  <div class="l-constrained clearfix">
     <?php print render($page['footer']); ?>
   </div>
 </div>

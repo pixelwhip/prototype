@@ -1,5 +1,5 @@
 <header id="header">
-  <div class="l-constrained">
+  <div class="l-constrained clearfix">
     <div id="branding">
       <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><?php if ($logo): ?><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" /><?php elseif ($site_name): ?><?php print $site_name; ?><?php endif; ?></a></h1>
       <?php if ($site_slogan): ?>

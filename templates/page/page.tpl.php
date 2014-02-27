@@ -5,7 +5,7 @@
   <div id="main">
 
       <?php if ($messages): ?>
-        <div id="messages">
+        <div id="messages" class="clearfix">
             <?php print $messages; ?>
         </div>
       <?php endif; // end messages ?>
