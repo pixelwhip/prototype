@@ -125,9 +125,8 @@ $base-line-height:  6px;         // Setting the base-line-height half.
 // Layout
 //----------------------------------------------------------------------------
 // Grid.
-$zen-column-count: 12;
-$zen-gutter-width: 24px;
-$box-sizing-polyfill-path: "/sites/all/themes/prototype/polyfills/boxsizing.htc";
+$grid-column-count: 24;
+$grid-gutter-width: 0;
 
 // Breakpoint.
 $mobile: 480px;
@@ -142,8 +141,8 @@ $w-full: 1104px;
 $w-content: 620px;
 $w-sidebar: 320px;
 $w-sidebar-first: 320px;
-$w-gutter: $zen-gutter-width;
-$w-gutter-half: $zen-gutter-width / 2;
+$w-gutter: 30px;
+$w-gutter-half: $w-gutter / 2;
 
 // Transition.
 //----------------------------------------------------------------------------

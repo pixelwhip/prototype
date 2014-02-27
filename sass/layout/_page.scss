@@ -6,86 +6,12 @@
 // relate to one another on a given page.
 // ----------------------------------------------------------------------------
 
-
 // Set the page width.
 .l-constrained {
-  @include zen-grid-container;
-  padding: 0 12px;
+  padding: 0 $w-gutter-half;
 
   @include breakpoint($desktop) {
     width: $w-full;
     margin: 0 auto;
-  }
-}
-
-
-// One Sidebar
-// -----------
-.one-sidebar {
-  #sidebar-first,
-  #sidebar-second {
-    clear: left;
-    padding-top: rhythm(3);
-  }
-
-  &.sidebar-first {
-    @include breakpoint($tablet) {
-      #content {
-        @include zen-grid-item(8, 5);
-      }
-
-      #sidebar-first {
-        @include zen-grid-item(3, 1);
-        clear: none;
-        padding-top: 0;
-      }
-    }
-  }
-
-  &.sidebar-second {
-    @include breakpoint($tablet) {
-      #content {
-        @include zen-grid-item(8, 1);
-      }
-
-      #sidebar-first {
-        @include zen-grid-item(3, 1, right);
-        clear: none;
-        padding-top: 0;
-      }
-    }
-  }
-}
-
-// One Sidebar
-// -----------
-.two-sidebars {
-  #sidebar-second {
-    clear: left;
-    padding-top: rhythm(3);
-  }
-
-  @include breakpoint($tablet) {
-    #content {
-      @include zen-grid-item(9, 4);
-    }
-
-    #sidebar-first {
-      @include zen-grid-item(3, 1);
-      clear: none;
-      padding-top: 0;
-    }
-  }
-
-  @include breakpoint($desktop) {
-    #content {
-      @include zen-grid-item(6, 4);
-    }
-
-    #sidebar-second {
-      @include zen-grid-item(3, 1, right);
-      clear: none;
-      padding-top: 0;
-    }
   }
 }
