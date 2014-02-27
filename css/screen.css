@@ -1,5 +1,4 @@
-.icon-sprite, .read-more:after,
-.node-link a:after {
+.icon-sprite {
   background: url('../img/icon-s419a39d16a.png') no-repeat;
 }
 
@@ -549,27 +548,11 @@ tr.even {
 }
 
 #footer {
-  *zoom: 1;
   padding: 1.5em 0;
-}
-#footer:before, #footer:after {
-  content: " ";
-  display: table;
-}
-#footer:after {
-  clear: both;
 }
 
 #header {
-  *zoom: 1;
   padding: 1.875em 0;
-}
-#header:before, #header:after {
-  content: " ";
-  display: table;
-}
-#header:after {
-  clear: both;
 }
 
 #branding {
@@ -589,16 +572,7 @@ tr.even {
 }
 
 #messages {
-  *zoom: 1;
-  font-weight: 600;
   padding: 1.5em 15px 0.375em;
-}
-#messages:before, #messages:after {
-  content: " ";
-  display: table;
-}
-#messages:after {
-  clear: both;
 }
 
 .page-admin-appearance-styleguide #block-system-main {
@@ -666,39 +640,6 @@ h2.styleguide {
 div.styleguide {
   padding: 2.25em 0;
   border-bottom: none;
-}
-
-.field-label {
-  font-size: 0.8125em;
-  line-height: 1.38462em;
-  font-weight: bold;
-  color: #262626;
-}
-
-.read-more,
-.node-link a {
-  padding: 0.25em 10px;
-  font-size: 0.75em;
-  line-height: 1.5em;
-}
-.read-more:after,
-.node-link a:after {
-  top: -1px;
-  content: '';
-  position: relative;
-  width: 18px;
-  height: 18px;
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-}
-.read-more:after,
-.node-link a:after {
-  background-position: 0 -36px;
-  margin-right: -4px;
 }
 
 .form-item,
@@ -828,6 +769,10 @@ select.error {
 
 .button--secondary {
   background-color: #666666;
+}
+
+.link--more {
+  font-weight: bold;
 }
 
 .article-list {
@@ -1241,3 +1186,14 @@ div.password-confirm {
 #block-search-form:after {
   clear: both;
 }
+
+.field-label {
+  font-size: 0.8125em;
+  line-height: 1.38462em;
+  font-weight: bold;
+  color: #262626;
+}
+
+/* No files to import found in components/menu/* */
+/* No files to import found in components/node/* */
+/* No files to import found in components/page/* */

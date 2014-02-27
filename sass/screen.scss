@@ -22,21 +22,14 @@
 @import "base/elements";
 
 // Layouts - Styles specific to page layout.
-@import "layout/page";
-@import "layout/region--above-content";
-@import "layout/region--footer";
-@import "layout/region--header";
-@import "layout/region--main";
-@import "layout/region--messages";
+@import "layout/*";
 
 // Libraries - Modified 3rd party CSS.
 // @import "libraries/flexslider";
 @import "libraries/styleguide"; // Enable if using styleguide module.
 
 // Components - Styles specific to components.
-@import "components/block";
 @import "components/comment";
-@import "components/field";
 @import "components/form";
 @import "components/heading";
 @import "components/image";
@@ -52,6 +45,13 @@
 @import "components/search";
 @import "components/table";
 @import "components/view";
+
+// Component Sub folders
+@import "components/block/*";
+@import "components/field/*";
+@import "components/menu/*";
+@import "components/node/*";
+@import "components/page/*";
 
 // Browser - browser specific CSS.
 // @import "browsers/lte-9";

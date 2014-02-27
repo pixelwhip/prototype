@@ -9,15 +9,3 @@
   font-weight: bold;
   color: blend-overlay(rgba($black, .25), $clr-text);
 }
-
-// More links
-.read-more,
-.node-link a {
-  @include button--small;
-  @include button-icon--after;
-
-  &:after {
-    @include icon-sprite(more);
-    margin-right: -4px;
-  }
-}
