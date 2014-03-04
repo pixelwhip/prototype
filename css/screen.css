@@ -537,11 +537,11 @@ tr.even {
   line-height: 1.28571em;
 }
 
-.l-constrained {
+.l--constrained {
   padding: 0 15px;
 }
 @media (min-width: 1080px) {
-  .l-constrained {
+  .l--constrained {
     width: 1104px;
     margin: 0 auto;
   }

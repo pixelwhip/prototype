@@ -12,13 +12,13 @@
 
       <?php if ($page['above_content']): ?>
         <div id="above-content">
-          <div class="l-constrained">
+          <div class="l--constrained">
             <?php print render($page['above_content']); ?>
           </div>
         </div>
       <?php endif; // end Above Content ?>
 
-      <div id="main-content" class="clearfix l-constrained">
+      <div id="main-content" class="clearfix l--constrained">
 
         <?php if (render($tabs)): ?>
           <div id="tabs">
@@ -30,7 +30,7 @@
 
           <?php if ($page['highlighted']): ?>
             <div id="highlighted">
-              <div class="l-constrained">
+              <div class="l--constrained">
                 <?php print render($page['highlighted']); ?>
               </div>
             </div>
@@ -67,7 +67,7 @@
 
       <?php if ($page['below_content']): ?>
         <div id="below-content">
-          <div class="l-constrained">
+          <div class="l--constrained">
             <?php print render($page['below_content']); ?>
           </div>
         </div>
