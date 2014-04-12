@@ -384,7 +384,7 @@ dt {
 }
 
 dd {
-  margin-left: 24px;
+  margin-left: 30px;
 }
 
 label {
@@ -551,10 +551,10 @@ tr.even {
 
 .image-left {
   float: left;
-  margin: 0 24px 0.375em 0;
+  margin: 0 30px 0.375em 0;
 }
 
 .image-right {
   float: right;
-  margin: 0 0 0.375em 24px;
+  margin: 0 0 0.375em 30px;
 }

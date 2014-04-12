@@ -1,6 +1,7 @@
 # Compass plugins
 require 'breakpoint'
-require 'zen-grids'
+require 'singularitygs'
+require 'sass-globbing'
 
 http_path = "/"
 css_dir = "css"
